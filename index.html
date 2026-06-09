@@ -36,7 +36,7 @@
         <td valign="top" width="500">
           <span class="name">Sangmin Bae</span>
           <p class="information"><br>
-           Research Scientist, <a href="http://osi.kaist.ac.kr/">OSI Lab</a> </p>
+           Postdoc Researcher, <a href="http://osi.kaist.ac.kr/">OSI Lab</a> </p>
           <p class="information">Graduate School of AI, KAIST<br>
             85 Hoegi-ro, Dongdaemun-gu, Seoul, Korea<br></p>
           <p class="information"><strong>Email</strong>: <span class="unselectable"> bsmn0223<span class="mock"></span><span class="hide">xkxkxk</span>@gmail.com</span> <span class="unselectable">/ bsmn0223<span class="mock"></span><span class="hide">xkxkxk</span>@kaist.ac.kr</span> </br>
@@ -46,9 +46,9 @@
     </tbody></table>
 
 <p>
-    I am currently looking for <span style="color: #ba0000;"><b>Industry Research Scientist Positions</b></span> (or equivalent roles), starting in <span style="color: #ba0000;"><b>Fall 2026</b></span>.
+    I am currently looking for <span style="color: #ba0000;"><b>Research Scientist Positions</b></span> (or equivalent roles), starting in <span style="color: #ba0000;"><b>Fall 2026</b></span>.
 </p>
-	  <p>
+	  <!-- <p>
     My doctoral research has been driven by two primary keywords: <span style="color: #0404c9;"><b>Efficiency</b></span> and <span style="color: #0404c9;"><b>Multimodality</b></span>.
 </p>
 <p style="line-height: 1.3;">
@@ -58,16 +58,36 @@
 </p>
 <p>
     I am recently focusing on specific topics such as <b>Knowledge Distillation</b>, <b>Agentic AI</b>, <b>Speculative Decoding</b>, and <b>Linear Attention</b>.
+</p> -->
+
+<p style="line-height: 1.3;">
+    I have extensive experience developing <b>scalable and efficient foundation language models</b>, and I have proposed <b>adaptive computation</b> methodologies, including <b>early-exit</b> and <b>recursive models</b>, that significantly improve <b>inference efficiency</b>. 
+    My expertise also spans multiple modalities, including <b>vision</b>, <b>audio</b>, and <b>tabular data</b>.
 </p>
+
+<p style="line-height: 1.3;">
+    Recently, I have been focusing on efficient <b>post-training</b> methods such as <b>on-policy distillation</b>, <b>speculative decoding with diffusion-based drafting</b>, and <b>linear attention</b>.
+    I am also broadly interested in the <b>role of memory in AI systems</b>, including memory agents for <b>agentic AI</b> and <b>robotics</b>, as well as <b>neural memory mechanisms</b> that store and update information in model parameters.
+</p>
+
+<p style="line-height: 1.3;">
+    More broadly, I aim to improve <b>training</b>, <b>data</b>, and 
+    <b>inference efficiency</b> across multiple modalities, including 
+    <b>language</b>, <b>vision</b>, <b>audio</b>, and <b>tabular data</b>.
+</p>
+	  
 <!-- 	  
   <strong>Welcome to my page!</strong> 
 	  
 	  I am a Research Scientist with a strong desire to become a  <strong>versatile expert in AI</strong>. I have explored NLP, CV, Audio, Tabular, and Multimodal, to broaden my knowledge and expertise. 
 	  <p>My research interests lie in <strong>Efficient AI</strong>, which entails exploring <strong>inference-</strong>, <strong>training-</strong> or <strong>data-efficient</strong> approaches. I'm lately interested in <strong>LLM Inference Acceleration</strong> via <strong>Adaptive Computation</strong> algorithms or various techniques. Moreover, I have experienced in developing <strong>Foundation Models</strong>---pretraining LLMs optimized for accelerated inference, and self-supervised learning for visual models.</p> -->
 
-   <a id="news" class="anchor"></a><span class="section">News</span>    
+   <!-- <a id="news" class="anchor"></a><span class="section">News</span>    
 
 	  
+    <p class="news">
+     <strong>Aug. 2025:</strong>  &#x1F38A A paper on 'Architecture Search for Hybrid Models' accepted at ICLR 2026.
+    </p>
     <p class="news">
      <strong>Oct. 2025:</strong>  🦋 Start Postdoc research at KAIST AI.
     </p>
@@ -75,16 +95,10 @@
      <strong>Sep. 2025:</strong>  &#x1F38A A paper on 'Mixture-of-Recursions' accepted at NeurIPS 2025.
     </p>
     <p class="news">
-     <strong>Aug. 2025:</strong>  &#x1F38A A paper on 'Contrastive Decoding' accepted at TMLR 2025.
-    </p>
-    <p class="news">
      <strong>Jun. 2025:</strong>  👨‍🎓 Successfully defended PhD dissertation.
     </p>
-    <p class="news">
-     <strong>Jun. 2025:</strong>  <img src="./images/google_logo.png" width="13" height="13"> Won $30,000 Google Grant Project.
-    </p>
 
-    <p>&nbsp;</p>
+    <p>&nbsp;</p> -->
 
    <a id="education" class="anchor"></a><span class="section">Education</span> 
 	<ul class="indented-dash-list">
@@ -99,7 +113,55 @@
     <a id="publications" class="anchor"></a><span class="section">Publications <a href="https://scholar.google.com/citations?user=T5rHY14AAAAJ&hl=en">  Google Scholar </a> </span>
     *: 1st co-authors, <sup>&dagger;</sup>: corresponding authors, C: conferences, J: journals, W: workshops, P: preprints, D: dissertation </br> </br>
     <table border="0" width="90%" class="paper">
+
+
+	</tbody></table></br>
+	<font size="4.5px"><strong>2026</strong></font>
+	<table border="0" width="90%" class="paper"><tbody>
+
+	<tr>
+	  <td>
+	    <img src="./images/2025_composer.png" class="PaperThumbnail" width="120" height="60">
+	  </td>
+	  <td bgcolor="#e9eaed">
+	    [W7] Soowon Oh*, Nam Cao*, Yujin Kim, Hojung Jung, Huzama Ahmad, <strong>Sangmin Bae</strong><sup>&dagger;</sup>, Se-Young Yun<sup>&dagger;</sup>. <strong>BASTION: Budget-Aware Speculative Decoding with Tree-structured Block Diffusion Drafting</strong>. <em>ICML Workshop on Resource-Adaptive Foundation Model Inference (AdaptFM)</em>, 2026. <strong><em>Oral Presentation</em></strong>.
+	    [<a href="https://arxiv.org/abs/2605.29727"><font color="#000080">pdf</font></a>]
+	    [<a href="https://github.com/kaist-ai-osi-lab/BASTION"><font color="#000080">code</font></a>]
+	  </td>
+	</tr>
 	
+	<tr>
+	  <td>
+	    <img src="./images/2025_composer.png" class="PaperThumbnail" width="120" height="60">
+	  </td>
+	  <td>
+	    [W6] Hojung Jung*, Juhyeong Kim*, Jaehyun Kwak, Boryeong Cho, Junhyeok Yang, Youngrok Park, <strong>Sangmin Bae</strong>, Se-Young Yun<sup>&dagger;</sup>. <strong>DualDrift: Combining Forward and Reverse Drifts for One-Step Generative Modeling</strong>. <em>ICML Workshop on Structured Probabilistic Inference and Generative Modeling</em>, 2026.
+	  </td>
+	</tr>
+	
+	<tr>
+	  <td>
+	    <img src="./images/2025_composer.png" class="PaperThumbnail" width="120" height="60">
+	  </td>
+	  <td bgcolor="#e9eaed">
+	    [C19] Tan Dat Nguyen, <strong>Sangmin Bae</strong>, Joon Son Chung, Jihoon Kim<sup>&dagger;</sup>. <strong>MamTra: A Hybrid Mamba-Transformer Backbone for Speech Synthesis</strong>. <em>Conference of the International Speech Communication Association (Interspeech)</em>, 2026.
+	    [<a href="https://arxiv.org/abs/2603.12342"><font color="#000080">pdf</font></a>]
+	    [<a href="https://mamtratts.github.io/"><font color="#000080">project</font></a>]
+	  </td>
+	</tr>
+		
+        <tr>
+          <td>
+            <img src="./images/2025_composer.png" class="PaperThumbnail" width="120" height="60">
+          </td>
+		<td>
+			<!-- <td bgcolor="#e9eaed"> -->
+            [P3] Bilge Acun*, Prasoon Sinha*, Newsha Ardalani, <strong>Sangmin Bae</strong>, Alicia Golden, Chien-Yu Lin, Meghana Madhyastha, Fei Sun, Neeraja J. Yadwadkar, Carole-Jean Wu. <strong>Composer: A Search Framework for Hybrid Neural Architecture Design</strong>. <em>Preprint</em> 2025.
+          	[<a href="https://arxiv.org/pdf/2510.00379"><font color="#000080">pdf</font></a>]
+	  </td>
+        </tr>
+
+		
 	</tbody></table></br>
 	<font size="4.5px"><strong>2025</strong></font>
 	<table border="0" width="90%" class="paper"><tbody>
@@ -110,24 +172,13 @@
           <td>
             <img src="./images/2025_hybrid.png" class="PaperThumbnail" width="120" height="60">
           </td>
-			<td>
-          <!-- <td bgcolor="#e9eaed"> -->
-            [P4] <strong>Sangmin Bae</strong>, Bilge Acun, Haroun Habeeb, Seungyeon Kim, Chien-Yu Lin, Liang Luo, Junjie Wang, Carole-Jean Wu. <strong>Hybrid Architectures for Language Models: Systematic Analysis and Design Insights</strong>. <em>Preprint</em> 2025.
+			<!-- <td> -->
+          <td bgcolor="#e9eaed">
+            [P3] <strong>Sangmin Bae</strong>, Bilge Acun, Haroun Habeeb, Seungyeon Kim, Chien-Yu Lin, Liang Luo, Junjie Wang, Carole-Jean Wu. <strong>Hybrid Architectures for Language Models: Systematic Analysis and Design Insights</strong>. <em>Preprint</em> 2025.
           	[<a href="https://arxiv.org/pdf/2510.04800"><font color="#000080">pdf</font></a>]
 			</td>
         </tr> 
 
-		
-        <tr>
-          <td>
-            <img src="./images/2025_composer.png" class="PaperThumbnail" width="120" height="60">
-          </td>
-		<!-- <td> -->
-			<td bgcolor="#e9eaed">
-            [P3] Bilge Acun*, Prasoon Sinha*, Newsha Ardalani, <strong>Sangmin Bae</strong>, Alicia Golden, Chien-Yu Lin, Meghana Madhyastha, Fei Sun, Neeraja J. Yadwadkar, Carole-Jean Wu. <strong>Composer: A Search Framework for Hybrid Neural Architecture Design</strong>. <em>Preprint</em> 2025.
-          	[<a href="https://arxiv.org/pdf/2510.00379"><font color="#000080">pdf</font></a>]
-	  </td>
-        </tr>
 		
         <tr>
           <td>
