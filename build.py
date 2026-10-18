@@ -1,4 +1,5 @@
 """Build dist/ and copy it to the existing GitHub Pages publishing root."""
+import hashlib
 import html
 import json
 import shutil
@@ -86,6 +87,10 @@ person = {
     "sameAs": ["https://scholar.google.com/citations?user=T5rHY14AAAAJ&hl=en", "https://github.com/raymin0223", "https://www.linkedin.com/in/raymin0223", "https://twitter.com/raymin0223"]
 }
 template = (ROOT / "src/index.html").read_text()
+# Changed assets get a new URL so browsers fetch the latest CSS and JavaScript.
+for name, placeholder in [("styles.css", "__STYLES_VERSION__"), ("app.js", "__APP_VERSION__")]:
+    version = hashlib.sha256((ROOT / "src" / name).read_bytes()).hexdigest()[:12]
+    template = template.replace(placeholder, version)
 for paper_id, placeholder in [("p2", "__OPRD_FIGURE__"), ("j2", "__HYBRID_FIGURE__"), ("c17", "__MOR_FIGURE__")]:
     paper = next(p for p in papers if p["id"] == paper_id)
     template = template.replace(placeholder, figure_html(paper, "highlight-art figure-art"))

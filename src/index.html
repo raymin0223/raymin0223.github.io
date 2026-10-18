@@ -16,7 +16,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preload" href="assets/noto-sans-400.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="assets/noto-sans-600.woff" as="font" type="font/woff" crossorigin>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=__STYLES_VERSION__">
   <script>try { if (localStorage.getItem('sangmin-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
   <script type="application/ld+json">__PERSON_SCHEMA__</script>
 </head>
@@ -178,6 +178,6 @@
   <dialog id="citation-dialog" aria-labelledby="citation-title"><div class="dialog-top"><span class="small-label">CITE THIS WORK</span><button class="icon-button" id="close-citation" aria-label="Close citation"><svg class="icon"><use href="#i-close"/></svg></button></div><h2 id="citation-title">BibTeX citation</h2><p id="citation-paper-title"></p><p class="citation-provenance"><a id="citation-source" target="_blank" rel="noopener"></a></p><p id="citation-note" hidden></p><pre id="citation-content" tabindex="0"></pre><div class="dialog-actions"><span>BibTeX</span><button class="button" id="copy-citation"><svg class="icon"><use href="#i-copy"/></svg> Copy citation</button></div></dialog>
   <div class="toast" id="toast" role="status" aria-live="polite" hidden><svg class="icon"><use href="#i-check"/></svg><span></span></div>
   <script type="application/json" id="publication-data">__PUBLICATION_DATA__</script>
-  <script src="app.js" defer></script>
+  <script src="app.js?v=__APP_VERSION__" defer></script>
 </body>
 </html>
