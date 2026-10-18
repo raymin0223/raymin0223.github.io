@@ -1,0 +1,6 @@
+# Keep the original local handoff ZIP without publishing it.
+/sangmin-bae-site-export.zip
+__pycache__/
+*.pyc
+.venv/
+.migration-preview/

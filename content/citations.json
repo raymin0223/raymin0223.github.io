@@ -1,0 +1,341 @@
+{
+  "p2": {
+    "bibtex": "@misc{park2026elicitingweaktostronggeneralizationonpolicy,\n      title={Eliciting Weak-to-Strong Generalization with On-Policy Reverse Distillation}, \n      author={Youngrok Park and Sangmin Bae and Hojung Jung and Jongwoo Ko and Yunseon Choi and Young Jin Kim and Pashmina Cameron and Aaron Courville and Se-Young Yun},\n      year={2026},\n      eprint={2609.08798},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2609.08798}, \n}",
+    "sourceUrl": "https://arxiv.org/bibtex/2609.08798",
+    "sourceLabel": "arXiv",
+    "sourceType": "preprint",
+    "method": "official_export",
+    "verifiedAt": "2026-10-18",
+    "displayNote": "This citation refers to the arXiv version."
+  },
+  "c24": {
+    "bibtex": "@misc{oh2026bastionbudgetawarespeculativedecoding,\n      title={Bastion: Budget-Aware Speculative Decoding with Tree-structured Block Diffusion Drafting}, \n      author={Soowon Oh and Nam Cao and Yujin Kim and Hojung Jung and Huzama Ahmad and Sangmin Bae and Se-Young Yun},\n      year={2026},\n      eprint={2605.29727},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2605.29727}, \n}",
+    "sourceUrl": "https://arxiv.org/bibtex/2605.29727",
+    "sourceLabel": "arXiv",
+    "sourceType": "preprint",
+    "method": "official_export",
+    "note": "Exact current arXiv export. NeurIPS 2026 acceptance independently confirmed on official NeurIPS schedule, but final proceedings BibTeX was not located. This cites the preprint.",
+    "verifiedAt": "2026-10-18",
+    "displayNote": "This citation refers to the arXiv version."
+  },
+  "c23": {
+    "bibtex": "@misc{kim2026llmasatutorpolicyawarepromptadaptation,\n      title={LLM-as-a-Tutor: Policy-Aware Prompt Adaptation for Non-Verifiable RL}, \n      author={Yujin Kim and Namgyu Ho and Sangmin Hwang and Joonkee Kim and Yongjin Yang and Sangmin Bae and Seungone Kim and Jaehun Jung and Se-Young Yun and Hwanjun Song},\n      year={2026},\n      eprint={2607.04412},\n      archivePrefix={arXiv},\n      primaryClass={cs.AI},\n      url={https://arxiv.org/abs/2607.04412}, \n}",
+    "sourceUrl": "https://arxiv.org/bibtex/2607.04412",
+    "sourceLabel": "arXiv",
+    "sourceType": "preprint",
+    "method": "official_export",
+    "note": "Exact current arXiv export. NeurIPS 2026 acceptance independently confirmed on official NeurIPS schedule, but final proceedings BibTeX was not located. This cites the preprint.",
+    "verifiedAt": "2026-10-18",
+    "displayNote": "This citation refers to the arXiv version."
+  },
+  "c22": {
+    "bibtex": "@inproceedings{jung2026dualdrift,\n  title = {DualDrift: Combining Forward and Reverse Drifts for One-Step Generative Modeling},\n  author = {Hojung Jung and Juhyeong Kim and Jaehyun Kwak and Boryeong Cho and Junhyeok Yang and Youngrok Park and Sangmin Bae and Se-Young Yun},\n  booktitle = {Advances in Neural Information Processing Systems},\n  year = {2026},\n  url = {https://openreview.net/forum?id=BxHttc1DET}\n}\n",
+    "sourceUrl": "https://neurips.cc/virtual/2026/poster/154664",
+    "sourceLabel": "NeurIPS 2026",
+    "sourceType": "conference",
+    "method": "official_metadata",
+    "note": "Formatted from title, full author list, conference and year verified on official NeurIPS poster page. No pages, volume, DOI or editors inferred. OpenReview export access blocked. Official NeurIPS record links to BxHttc1DET; current site URL H5J9zbBlHX is a different record and should be changed.",
+    "recommendedUrl": "https://openreview.net/forum?id=BxHttc1DET",
+    "verifiedTitle": "DualDrift: Combining Forward and Reverse Drifts for One-Step Generative Modeling",
+    "verifiedAuthors": [
+      "Hojung Jung",
+      "Juhyeong Kim",
+      "Jaehyun Kwak",
+      "Boryeong Cho",
+      "Junhyeok Yang",
+      "Youngrok Park",
+      "Sangmin Bae",
+      "Se-Young Yun"
+    ],
+    "verifiedYear": 2026,
+    "verifiedAt": "2026-10-18",
+    "displayNote": "BibTeX formatted from the official conference record."
+  },
+  "c21": {
+    "bibtex": "@misc{park2025temporalalignmentguidanceonmanifold,\n      title={Temporal Alignment Guidance: On-Manifold Sampling in Diffusion Models}, \n      author={Youngrok Park and Hojung Jung and Sangmin Bae and Se-Young Yun},\n      year={2025},\n      eprint={2510.11057},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2510.11057}, \n}",
+    "sourceUrl": "https://arxiv.org/bibtex/2510.11057",
+    "sourceLabel": "arXiv",
+    "sourceType": "preprint",
+    "method": "official_export",
+    "note": "Exact current arXiv export. NeurIPS 2026 acceptance independently confirmed on official NeurIPS schedule, but final proceedings BibTeX was not located. This cites the preprint. The preprint year is 2025; do not rewrite it to conference year 2026.",
+    "verifiedAt": "2026-10-18",
+    "displayNote": "This citation refers to the arXiv version."
+  },
+  "c20": {
+    "bibtex": null,
+    "sourceUrl": "https://disl-lab.github.io/publications/",
+    "sourceLabel": "Author lab publication list",
+    "sourceType": "unverified_citation",
+    "method": "unavailable",
+    "note": "TAC-CoT title, four authors and EMNLP 2026 main acceptance confirmed on author lab page and https://sites.google.com/view/juseondo/ . No independently accessible ACL Anthology, arXiv or official proceedings citation record/export located; do not generate a citation pretending to be an official export.",
+    "verifiedAt": "2026-10-18",
+    "displayNote": "Official bibliographic record not yet verified."
+  },
+  "j2": {
+    "bibtex": "@article{\nbae2026transformerssm,\ntitle={Transformer{\\textendash}{SSM} Hybrid Language Models: Systematic Analysis and Design Insights},\nauthor={Sangmin Bae and Bilge Acun and Chien-Yu Lin and Haroun Habeeb and Seungyeon Kim and Liang Luo and Junjie Wang and Carole-Jean Wu},\njournal={Transactions on Machine Learning Research},\nissn={2835-8856},\nyear={2026},\nurl={https://openreview.net/forum?id=x7qyXl8ecT},\nnote={}\n}",
+    "sourceUrl": "https://jmlr.org/tmlr/papers/bib/x7qyXl8ecT.bib",
+    "sourceLabel": "TMLR",
+    "sourceType": "journal",
+    "method": "official_export",
+    "note": "Journal title is Transformer–SSM Hybrid Language Models: Systematic Analysis and Design Insights. Current arXiv export retains the different title Hybrid Architectures for Language Models: Systematic Analysis and Design Insights. Official journal export used.",
+    "verifiedAt": "2026-10-18",
+    "displayNote": ""
+  },
+  "c19": {
+    "bibtex": "@inproceedings{nguyen26c_interspeech,\n  title     = {{MamTra: A Hybrid Mamba-Transformer Backbone for Speech Synthesis}},\n  author    = {Tan Dat Nguyen and Sangmin Bae and Joon Son Chung and Ji-Hoon Kim},\n  year      = {2026},\n  booktitle = {{Interspeech 2026}},\n  pages     = {6646--6651},\n  doi       = {10.21437/Interspeech.2026-1031},\n  issn      = {2958-1796},\n}",
+    "sourceUrl": "https://www.isca-archive.org/interspeech_2026/nguyen26c_interspeech.html",
+    "sourceLabel": "ISCA Archive",
+    "sourceType": "conference",
+    "method": "official_export",
+    "note": "Official proceedings author spelling is Ji-Hoon Kim (site currently Jihoon Kim).",
+    "verifiedAt": "2026-10-18",
+    "displayNote": ""
+  },
+  "c18": {
+    "bibtex": "@inproceedings{ICLR2026_c07f1983,\n author = {Acun, Bilge and Sinha, Prasoon and Ardalani, Newsha and Bae, Sangmin and Golden, Alicia and Madhyastha, Meghana and Lin, Chien-Yu and Sun, Fei and Yadwadkar, Neeraja and Wu, Carole-Jean},\n booktitle = {International Conference on Learning Representations},\n editor = {C. Vondrick and B. Hariharan and C. Raffel and L. Pinto and D. Yang and A. Faust},\n pages = {118642--118670},\n title = {Composer: A Search Framework for Hybrid Neural Architecture Design},\n url = {https://proceedings.iclr.cc/paper_files/paper/2026/file/c07f198309b9b81a0fdba98fb7aa90b4-Paper-Conference.pdf},\n volume = {2026},\n year = {2026}\n}\n",
+    "sourceUrl": "https://proceedings.iclr.cc/paper_files/paper/8862-/bibtex",
+    "sourceLabel": "ICLR 2026 proceedings",
+    "sourceType": "conference",
+    "method": "official_export",
+    "note": "Official proceedings author order differs from supplied CV/arXiv: Meghana Madhyastha precedes Chien-Yu Lin; Neeraja Yadwadkar is printed without middle initial J. Exact proceedings export used. Landing page: https://proceedings.iclr.cc/paper_files/paper/2026/hash/c07f198309b9b81a0fdba98fb7aa90b4-Abstract-Conference.html",
+    "verifiedAt": "2026-10-18",
+    "displayNote": ""
+  },
+  "d": {
+    "bibtex": "@misc{bae2025acceleratinglargelanguagemodel,\n      title={Accelerating Large Language Model Inference via Early-Exiting Algorithms}, \n      author={Sangmin Bae},\n      year={2025},\n      eprint={2509.05915},\n      archivePrefix={arXiv},\n      primaryClass={cs.CL},\n      url={https://arxiv.org/abs/2509.05915}, \n}",
+    "sourceUrl": "https://arxiv.org/bibtex/2509.05915",
+    "sourceLabel": "arXiv",
+    "sourceType": "preprint",
+    "method": "official_export",
+    "verifiedAt": "2026-10-18",
+    "displayNote": "This citation refers to the arXiv version."
+  },
+  "c17": {
+    "bibtex": "@inproceedings{NEURIPS2025_8b08bbf8,\n author = {Bae, Sangmin and Kim, Yujin and Bayat, Reza and Kim, Sungnyun and Ha, Jiyoun and Schuster, Tal and Fisch, Adam and Harutyunyan, Hrayr and Ji, Ziwei and Courville, Aaron and Yun, Se-Young},\n booktitle = {Advances in Neural Information Processing Systems},\n doi = {10.52202/085713-3229},\n editor = {D. Belgrave and C. Zhang and H. Lin and R. Pascanu and P. Koniusz and M. Ghassemi and N. Chen},\n pages = {96572--96617},\n publisher = {Curran Associates, Inc.},\n title = {Mixture-of-Recursions: Learning Dynamic Recursive Depths for Adaptive Token-Level Computation},\n url = {https://proceedings.neurips.cc/paper_files/paper/2025/file/8b08bbf8b420faa6eeb4020720582ec7-Paper-Conference.pdf},\n volume = {38, Main Conference},\n year = {2025}\n}\n",
+    "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/29797-/bibtex",
+    "sourceLabel": "NeurIPS proceedings",
+    "sourceType": "proceedings",
+    "method": "official_export",
+    "verifiedAt": "2026-10-18",
+    "displayNote": ""
+  },
+  "j1": {
+    "bibtex": "@article{\nkim2025vscode,\ntitle={{VSC}oDe: Visual-Augmentation Selection for Contrastive Decoding},\nauthor={Sihyeon Kim and Boryeong Cho and Sangmin Bae and Sumyeong Ahn and Se-Young Yun},\njournal={Transactions on Machine Learning Research},\nissn={2835-8856},\nyear={2025},\nurl={https://openreview.net/forum?id=CqSyPc9W7Y},\nnote={}\n}",
+    "sourceUrl": "https://jmlr.org/tmlr/papers/bib/CqSyPc9W7Y.bib",
+    "sourceLabel": "TMLR",
+    "sourceType": "journal",
+    "method": "official_export",
+    "notes": "Exact official TMLR publisher export. Replaces the institutional export with inconsistent month/volume.",
+    "verifiedAt": "2026-10-18",
+    "displayNote": ""
+  },
+  "c16": {
+    "bibtex": "@InProceedings{pmlr-v267-kim25i,\n  title = \t {{M}o{HAVE}: Mixture of Hierarchical Audio-Visual Experts for Robust Speech Recognition},\n  author =       {Kim, Sungnyun and Jang, Kangwook and Bae, Sangmin and Cho, Sungwoo and Yun, Se-Young},\n  booktitle = \t {Proceedings of the 42nd International Conference on Machine Learning},\n  pages = \t {30113--30131},\n  year = \t {2025},\n  editor = \t {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},\n  volume = \t {267},\n  series = \t {Proceedings of Machine Learning Research},\n  month = \t {13--19 Jul},\n  publisher =    {PMLR},\n  pdf = \t {https://raw.githubusercontent.com/mlresearch/v267/main/assets/kim25i/kim25i.pdf},\n  url = \t {https://proceedings.mlr.press/v267/kim25i.html},\n}\n",
+    "sourceUrl": "https://proceedings.mlr.press/v267/kim25i.html",
+    "sourceLabel": "PMLR proceedings",
+    "sourceType": "proceedings",
+    "method": "official_export",
+    "verifiedAt": "2026-10-18",
+    "displayNote": ""
+  },
+  "c15": {
+    "bibtex": "@inproceedings{ICLR2025_54d6a552,\n author = {Bae, Sangmin and Fisch, Adam and Harutyunyan, Hrayr and Ji, Ziwei and Kim, Seungyeon and Schuster, Tal},\n booktitle = {International Conference on Learning Representations},\n editor = {Y. Yue and A. Garg and N. Peng and F. Sha and R. Yu},\n pages = {34282--34327},\n title = {Relaxed Recursive Transformers: Effective Parameter Sharing with Layer-wise LoRA},\n url = {https://proceedings.iclr.cc/paper_files/paper/2025/file/54d6a55225cebbdc16fbb0e45c5bdf2b-Paper-Conference.pdf},\n volume = {2025},\n year = {2025}\n}\n",
+    "sourceUrl": "https://proceedings.iclr.cc/paper_files/paper/497-/bibtex",
+    "sourceLabel": "ICLR proceedings",
+    "sourceType": "proceedings",
+    "method": "official_export",
+    "verifiedAt": "2026-10-18",
+    "displayNote": ""
+  },
+  "c14": {
+    "bibtex": "@inproceedings{ICLR2025_a452a7c6,\n author = {Kim, Sungnyun and Cho, Sungwoo and Bae, Sangmin and Jang, Kangwook and Yun, Se-Young},\n booktitle = {International Conference on Learning Representations},\n editor = {Y. Yue and A. Garg and N. Peng and F. Sha and R. Yu},\n pages = {65598--65619},\n title = {Multi-Task Corrupted Prediction for Learning Robust Audio-Visual Speech Representation},\n url = {https://proceedings.iclr.cc/paper_files/paper/2025/file/a452a7c6c463e4ae8fbdc614c6e983e6-Paper-Conference.pdf},\n volume = {2025},\n year = {2025}\n}\n",
+    "sourceUrl": "https://proceedings.iclr.cc/paper_files/paper/1808-/bibtex",
+    "sourceLabel": "ICLR proceedings",
+    "sourceType": "proceedings",
+    "method": "official_export",
+    "verifiedAt": "2026-10-18",
+    "displayNote": ""
+  },
+  "c13": {
+    "bibtex": "@inproceedings{ICLR2025_e0c67da7,\n author = {Yang, Yongjin and Kim, Sihyeon and Jung, Hojung and Bae, Sangmin and Kim, SangMook and Yun, Se-Young and Lee, Kimin },\n booktitle = {International Conference on Learning Representations},\n editor = {Y. Yue and A. Garg and N. Peng and F. Sha and R. Yu},\n pages = {90132--90160},\n title = {Automated Filtering of Human Feedback Data for Aligning Text-to-Image Diffusion Models},\n url = {https://proceedings.iclr.cc/paper_files/paper/2025/file/e0c67da735023128cddefd8fc854282c-Paper-Conference.pdf},\n volume = {2025},\n year = {2025}\n}\n",
+    "sourceUrl": "https://proceedings.iclr.cc/paper_files/paper/3068-/bibtex",
+    "sourceLabel": "ICLR proceedings",
+    "sourceType": "proceedings",
+    "method": "official_export",
+    "verifiedAt": "2026-10-18",
+    "displayNote": ""
+  },
+  "c12": {
+    "bibtex": "@inproceedings{NEURIPS2024_579b5b84,\n author = {Ho, Namgyu and Bae, Sangmin and Kim, Taehyeon and Jo, Hyunjik and Kim, Yireun and Schuster, Tal and Fisch, Adam and Thorne, James and Yun, Se-Young},\n booktitle = {Advances in Neural Information Processing Systems},\n doi = {10.52202/079017-1545},\n editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},\n pages = {48740--48783},\n publisher = {Curran Associates, Inc.},\n title = {Block Transformer: Global-to-Local Language Modeling for Fast Inference},\n url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/579b5b84311e122584dedab1d3b7613f-Paper-Conference.pdf},\n volume = {37},\n year = {2024}\n}\n",
+    "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/25033-/bibtex",
+    "sourceLabel": "NeurIPS proceedings",
+    "sourceType": "proceedings",
+    "method": "official_export",
+    "verifiedAt": "2026-10-18",
+    "displayNote": ""
+  },
+  "c11": {
+    "bibtex": " @inproceedings{Kim_2024_c11, title={Learning Video Temporal Dynamics With Cross-Modal Attention For Robust Audio-Visual Speech Recognition}, url={http://dx.doi.org/10.1109/SLT61566.2024.10832305}, DOI={10.1109/slt61566.2024.10832305}, booktitle={2024 IEEE Spoken Language Technology Workshop (SLT)}, publisher={IEEE}, author={Kim, Sungnyun and Jang, Kangwook and Bae, Sangmin and Kim, Hoirin and Yun, Se-Young}, year={2024}, month=Dec, pages={447–454} }\n",
+    "sourceUrl": "https://api.crossref.org/works/10.1109/SLT61566.2024.10832305/transform/application/x-bibtex",
+    "sourceLabel": "Crossref / IEEE",
+    "sourceType": "doi-registry",
+    "method": "doi_registry_export",
+    "note": "Published title omits Asymmetric, which appears in the site source title. Official DOI title is Learning Video Temporal Dynamics With Cross-Modal Attention For Robust Audio-Visual Speech Recognition. Original site fields were not edited.",
+    "verifiedAt": "2026-10-18",
+    "displayNote": "",
+    "originalBibtex": " @inproceedings{Kim_2024, title={Learning Video Temporal Dynamics With Cross-Modal Attention For Robust Audio-Visual Speech Recognition}, url={http://dx.doi.org/10.1109/SLT61566.2024.10832305}, DOI={10.1109/slt61566.2024.10832305}, booktitle={2024 IEEE Spoken Language Technology Workshop (SLT)}, publisher={IEEE}, author={Kim, Sungnyun and Jang, Kangwook and Bae, Sangmin and Kim, Hoirin and Yun, Se-Young}, year={2024}, month=Dec, pages={447–454} }\n",
+    "keyNote": "Entry key disambiguated; publisher bibliographic fields are unchanged."
+  },
+  "c10": {
+    "bibtex": "@inproceedings{choi-etal-2024-hard,\n    title = \"Hard Prompts Made Interpretable: Sparse Entropy Regularization for Prompt Tuning with {RL}\",\n    author = \"Choi, Yunseon  and\n      Bae, Sangmin  and\n      Ban, Seonghyun  and\n      Jeong, Minchan  and\n      Zhang, Chuheng  and\n      Song, Lei  and\n      Zhao, Li  and\n      Bian, Jiang  and\n      Kim, Kee-Eung\",\n    editor = \"Ku, Lun-Wei  and\n      Martins, Andre  and\n      Srikumar, Vivek\",\n    booktitle = \"Proceedings of the 62nd Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)\",\n    month = aug,\n    year = \"2024\",\n    address = \"Bangkok, Thailand\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2024.acl-long.449/\",\n    doi = \"10.18653/v1/2024.acl-long.449\",\n    pages = \"8252--8271\"\n}\n\n",
+    "sourceUrl": "https://aclanthology.org/2024.acl-long.449.bib",
+    "sourceLabel": "ACL Anthology",
+    "sourceType": "proceedings",
+    "method": "official_export",
+    "verifiedAt": "2026-10-18",
+    "displayNote": ""
+  },
+  "c9": {
+    "bibtex": " @inproceedings{Kim_2024_c9, title={RepAugment: Input-Agnostic Representation-Level Augmentation for Respiratory Sound Classification}, url={http://dx.doi.org/10.1109/EMBC53108.2024.10782363}, DOI={10.1109/embc53108.2024.10782363}, booktitle={2024 46th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)}, publisher={IEEE}, author={Kim, June-Woo and Toikkanen, Miika and Bae, Sangmin and Kim, Minseok and Jung, Ho-Young}, year={2024}, month=July, pages={1–6} }\n",
+    "sourceUrl": "https://api.crossref.org/works/10.1109/EMBC53108.2024.10782363/transform/application/x-bibtex",
+    "sourceLabel": "Crossref / IEEE",
+    "sourceType": "doi-registry",
+    "method": "doi_registry_export",
+    "verifiedAt": "2026-10-18",
+    "displayNote": "",
+    "originalBibtex": " @inproceedings{Kim_2024, title={RepAugment: Input-Agnostic Representation-Level Augmentation for Respiratory Sound Classification}, url={http://dx.doi.org/10.1109/EMBC53108.2024.10782363}, DOI={10.1109/embc53108.2024.10782363}, booktitle={2024 46th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)}, publisher={IEEE}, author={Kim, June-Woo and Toikkanen, Miika and Bae, Sangmin and Kim, Minseok and Jung, Ho-Young}, year={2024}, month=July, pages={1–6} }\n",
+    "keyNote": "Entry key disambiguated; publisher bibliographic fields are unchanged."
+  },
+  "c8": {
+    "bibtex": "@inproceedings{kim-etal-2024-carpe,\n    title = \"Carpe diem: On the Evaluation of World Knowledge in Lifelong Language Models\",\n    author = \"Kim, Yujin  and\n      Yoon, Jaehong  and\n      Ye, Seonghyeon  and\n      Bae, Sangmin  and\n      Ho, Namgyu  and\n      Hwang, Sung Ju  and\n      Yun, Se-Young\",\n    editor = \"Duh, Kevin  and\n      Gomez, Helena  and\n      Bethard, Steven\",\n    booktitle = \"Proceedings of the 2024 Conference of the {N}orth {A}merican Chapter of the {A}ssociation for {C}omputational {L}inguistics: Human Language Technologies (Volume 1: Long Papers)\",\n    month = jun,\n    year = \"2024\",\n    address = \"Mexico City, Mexico\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2024.naacl-long.302/\",\n    doi = \"10.18653/v1/2024.naacl-long.302\",\n    pages = \"5401--5415\"\n}\n\n",
+    "sourceUrl": "https://aclanthology.org/2024.naacl-long.302.bib",
+    "sourceLabel": "ACL Anthology",
+    "sourceType": "proceedings",
+    "method": "official_export",
+    "verifiedAt": "2026-10-18",
+    "displayNote": ""
+  },
+  "c7": {
+    "bibtex": " @inproceedings{Kim_2024_c7, title={Stethoscope-Guided Supervised Contrastive Learning for Cross-Domain Adaptation on Respiratory Sound Classification}, url={http://dx.doi.org/10.1109/ICASSP48485.2024.10447734}, DOI={10.1109/icassp48485.2024.10447734}, booktitle={ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, publisher={IEEE}, author={Kim, June-Woo and Bae, Sangmin and Cho, Won-Yang and Lee, Byungjo and Jung, Ho-Young}, year={2024}, month=Apr, pages={1431–1435} }\n",
+    "sourceUrl": "https://api.crossref.org/works/10.1109/ICASSP48485.2024.10447734/transform/application/x-bibtex",
+    "sourceLabel": "Crossref / IEEE",
+    "sourceType": "doi-registry",
+    "method": "doi_registry_export",
+    "verifiedAt": "2026-10-18",
+    "displayNote": "",
+    "originalBibtex": " @inproceedings{Kim_2024, title={Stethoscope-Guided Supervised Contrastive Learning for Cross-Domain Adaptation on Respiratory Sound Classification}, url={http://dx.doi.org/10.1109/ICASSP48485.2024.10447734}, DOI={10.1109/icassp48485.2024.10447734}, booktitle={ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, publisher={IEEE}, author={Kim, June-Woo and Bae, Sangmin and Cho, Won-Yang and Lee, Byungjo and Jung, Ho-Young}, year={2024}, month=Apr, pages={1431–1435} }\n",
+    "keyNote": "Entry key disambiguated; publisher bibliographic fields are unchanged."
+  },
+  "w4": {
+    "bibtex": "@misc{kim2023adversarialfinetuningusinggenerated,\n      title={Adversarial Fine-tuning using Generated Respiratory Sound to Address Class Imbalance}, \n      author={June-Woo Kim and Chihyeon Yoon and Miika Toikkanen and Sangmin Bae and Ho-Young Jung},\n      year={2023},\n      eprint={2311.06480},\n      archivePrefix={arXiv},\n      primaryClass={cs.SD},\n      url={https://arxiv.org/abs/2311.06480}, \n}",
+    "sourceUrl": "https://arxiv.org/bibtex/2311.06480",
+    "sourceLabel": "arXiv",
+    "sourceType": "arxiv",
+    "method": "official_export",
+    "note": "Preprint citation. Official arXiv record notes acceptance at NeurIPS 2023 DGM4H workshop; OpenReview paper z1AVG5LDQ7 confirms title/authors, but public API export was blocked (HTTP 403).",
+    "verifiedAt": "2026-10-18",
+    "displayNote": "This citation refers to the arXiv version."
+  },
+  "w3": {
+    "bibtex": "@misc{breejen2025finetunedincontextlearningtransformers,\n      title={Fine-tuned In-Context Learning Transformers are Excellent Tabular Data Classifiers}, \n      author={Felix den Breejen and Sangmin Bae and Stephen Cha and Se-Young Yun},\n      year={2025},\n      eprint={2405.13396},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2405.13396}, \n}",
+    "sourceUrl": "https://arxiv.org/bibtex/2405.13396",
+    "sourceLabel": "arXiv",
+    "sourceType": "preprint",
+    "method": "official_export",
+    "verifiedAt": "2026-10-18",
+    "displayNote": "This citation refers to the arXiv version.",
+    "note": "The author requested the revised Fine-tuned In-Context Learning Transformers are Excellent Tabular Data Classifiers paper. Its official current arXiv export has four authors and year 2025. The displayed record now matches this version."
+  },
+  "c6": {
+    "bibtex": "@inproceedings{bae-etal-2023-fast,\n    title = \"Fast and Robust Early-Exiting Framework for Autoregressive Language Models with Synchronized Parallel Decoding\",\n    author = \"Bae, Sangmin  and\n      Ko, Jongwoo  and\n      Song, Hwanjun  and\n      Yun, Se-Young\",\n    editor = \"Bouamor, Houda  and\n      Pino, Juan  and\n      Bali, Kalika\",\n    booktitle = \"Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing\",\n    month = dec,\n    year = \"2023\",\n    address = \"Singapore\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2023.emnlp-main.362/\",\n    doi = \"10.18653/v1/2023.emnlp-main.362\",\n    pages = \"5910--5924\"\n}\n\n",
+    "sourceUrl": "https://aclanthology.org/2023.emnlp-main.362.bib",
+    "sourceLabel": "ACL Anthology",
+    "sourceType": "proceedings",
+    "method": "official_export",
+    "verifiedAt": "2026-10-18",
+    "displayNote": ""
+  },
+  "c5": {
+    "bibtex": "@inproceedings{bae23b_interspeech,\n  title     = {{Patch-Mix Contrastive Learning with Audio Spectrogram Transformer on Respiratory Sound Classification}},\n  author    = {Sangmin Bae and June-Woo Kim and Won-Yang Cho and Hyerim Baek and Soyoun Son and Byungjo Lee and Changwan Ha and Kyongpil Tae and Sungnyun Kim and Se-Young Yun},\n  year      = {2023},\n  booktitle = {{Interspeech 2023}},\n  pages     = {5436--5440},\n  doi       = {10.21437/Interspeech.2023-1426},\n  issn      = {2958-1796},\n}",
+    "sourceUrl": "https://www.isca-archive.org/interspeech_2023/bae23b_interspeech.html",
+    "sourceLabel": "ISCA Archive",
+    "sourceType": "proceedings",
+    "method": "official_export",
+    "verifiedAt": "2026-10-18",
+    "displayNote": ""
+  },
+  "c4": {
+    "bibtex": "@InProceedings{Kim_2023_CVPR_c4,\n    author    = {Kim, Sungnyun and Bae, Sangmin and Yun, Se-Young},\n    title     = {Coreset Sampling From Open-Set for Fine-Grained Self-Supervised Learning},\n    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},\n    month     = {June},\n    year      = {2023},\n    pages     = {7537-7547}\n}",
+    "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2023/html/Kim_Coreset_Sampling_From_Open-Set_for_Fine-Grained_Self-Supervised_Learning_CVPR_2023_paper.html",
+    "sourceLabel": "CVF Open Access",
+    "sourceType": "proceedings",
+    "method": "official_export",
+    "note": "CVF uses the same citation key Kim_2023_CVPR for both c3 and c4; individual exports preserve it, but a combined bibliography would need disambiguated keys.",
+    "verifiedAt": "2026-10-18",
+    "displayNote": "",
+    "originalBibtex": "@InProceedings{Kim_2023_CVPR,\n    author    = {Kim, Sungnyun and Bae, Sangmin and Yun, Se-Young},\n    title     = {Coreset Sampling From Open-Set for Fine-Grained Self-Supervised Learning},\n    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},\n    month     = {June},\n    year      = {2023},\n    pages     = {7537-7547}\n}",
+    "keyNote": "Entry key disambiguated; publisher bibliographic fields are unchanged."
+  },
+  "c3": {
+    "bibtex": "@InProceedings{Kim_2023_CVPR_c3,\n    author    = {Kim, SangMook and Bae, Sangmin and Song, Hwanjun and Yun, Se-Young},\n    title     = {Re-Thinking Federated Active Learning Based on Inter-Class Diversity},\n    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},\n    month     = {June},\n    year      = {2023},\n    pages     = {3944-3953}\n}",
+    "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2023/html/Kim_Re-Thinking_Federated_Active_Learning_Based_on_Inter-Class_Diversity_CVPR_2023_paper.html",
+    "sourceLabel": "CVF Open Access",
+    "sourceType": "proceedings",
+    "method": "official_export",
+    "note": "CVF uses the same citation key Kim_2023_CVPR for both c3 and c4; individual exports preserve it, but a combined bibliography would need disambiguated keys.",
+    "verifiedAt": "2026-10-18",
+    "displayNote": "",
+    "originalBibtex": "@InProceedings{Kim_2023_CVPR,\n    author    = {Kim, SangMook and Bae, Sangmin and Song, Hwanjun and Yun, Se-Young},\n    title     = {Re-Thinking Federated Active Learning Based on Inter-Class Diversity},\n    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},\n    month     = {June},\n    year      = {2023},\n    pages     = {3944-3953}\n}",
+    "keyNote": "Entry key disambiguated; publisher bibliographic fields are unchanged."
+  },
+  "c2": {
+    "bibtex": " @article{Bae_2023, title={Self-Contrastive Learning: Single-Viewed Supervised Contrastive Framework Using Sub-network}, volume={37}, ISSN={2159-5399}, url={http://dx.doi.org/10.1609/aaai.v37i1.25091}, DOI={10.1609/aaai.v37i1.25091}, number={1}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, publisher={Association for the Advancement of Artificial Intelligence (AAAI)}, author={Bae, Sangmin and Kim, Sungnyun and Ko, Jongwoo and Lee, Gihun and Noh, Seungjong and Yun, Se-Young}, year={2023}, month=June, pages={197–205} }\n",
+    "sourceUrl": "https://api.crossref.org/works/10.1609/aaai.v37i1.25091/transform/application/x-bibtex",
+    "sourceLabel": "Crossref / AAAI DOI record",
+    "sourceType": "doi_registry",
+    "method": "doi_registry_export",
+    "note": "Verified against publisher page https://ojs.aaai.org/index.php/AAAI/article/view/25091. Publisher BibTeX export returned HTTP 502; Crossref export preserves registered data.",
+    "verifiedAt": "2026-10-18",
+    "displayNote": ""
+  },
+  "c1": {
+    "bibtex": "@inproceedings{NEURIPS2022_fadec8f2,\n author = {Lee, Gihun and Jeong, Minchan and Shin, Yongjin and Bae, Sangmin and Yun, Se-Young},\n booktitle = {Advances in Neural Information Processing Systems},\n doi = {10.52202/068431-2787},\n editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},\n pages = {38461--38474},\n publisher = {Curran Associates, Inc.},\n title = {Preservation of the Global Knowledge by Not-True Distillation in Federated Learning},\n url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/fadec8f2e65f181d777507d1df69b92f-Paper-Conference.pdf},\n volume = {35},\n year = {2022}\n}\n",
+    "sourceUrl": "https://papers.nips.cc/paper_files/paper/19038-/bibtex",
+    "sourceLabel": "NeurIPS Proceedings",
+    "sourceType": "proceedings",
+    "method": "official_export",
+    "note": "Official proceedings title includes \"the Global Knowledge\"; current site title omits \"the\".",
+    "verifiedAt": "2026-10-18",
+    "displayNote": ""
+  },
+  "w2": {
+    "bibtex": "@misc{kim2020mixcomixupcontrastivelearning,\n      title={MixCo: Mix-up Contrastive Learning for Visual Representation}, \n      author={Sungnyun Kim and Gihun Lee and Sangmin Bae and Se-Young Yun},\n      year={2020},\n      eprint={2010.06300},\n      archivePrefix={arXiv},\n      primaryClass={cs.CV},\n      url={https://arxiv.org/abs/2010.06300}, \n}",
+    "sourceUrl": "https://arxiv.org/bibtex/2010.06300",
+    "sourceLabel": "arXiv",
+    "sourceType": "arxiv",
+    "method": "official_export",
+    "note": "Preprint citation. Official arXiv record notes acceptance at NeurIPS 2020 Self-Supervised Learning workshop; a separate official proceedings BibTeX was not located.",
+    "verifiedAt": "2026-10-18",
+    "displayNote": "This citation refers to the arXiv version."
+  },
+  "p1": {
+    "bibtex": "@misc{kim2020accuratefastfederatedlearning,\n      title={Accurate and Fast Federated Learning via Combinatorial Multi-Armed Bandits}, \n      author={Taehyeon Kim and Sangmin Bae and Jin-woo Lee and Seyoung Yun},\n      year={2020},\n      eprint={2012.03270},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2012.03270}, \n}",
+    "sourceUrl": "https://arxiv.org/bibtex/2012.03270",
+    "sourceLabel": "arXiv",
+    "sourceType": "arxiv",
+    "method": "official_export",
+    "note": "Official export spells the last author Seyoung Yun; preserved exact exporter spelling rather than normalizing.",
+    "verifiedAt": "2026-10-18",
+    "displayNote": "This citation refers to the arXiv version."
+  },
+  "w1": {
+    "bibtex": " @inproceedings{Lee_2020, title={SIPA: A Simple Framework for Efficient Networks}, url={http://dx.doi.org/10.1109/ICDMW51313.2020.00105}, DOI={10.1109/icdmw51313.2020.00105}, booktitle={2020 International Conference on Data Mining Workshops (ICDMW)}, publisher={IEEE}, author={Lee, Gihun and Bae, Sangmin and Oh, Jaehoon and Yun, Se-Young}, year={2020}, month=Nov, pages={729–736} }\n",
+    "sourceUrl": "https://api.crossref.org/works/10.1109/ICDMW51313.2020.00105/transform/application/x-bibtex",
+    "sourceLabel": "Crossref / IEEE DOI record",
+    "sourceType": "doi_registry",
+    "method": "doi_registry_export",
+    "note": "Publication DOI and pages also verified on https://arxiv.org/abs/2004.14476.",
+    "verifiedAt": "2026-10-18",
+    "displayNote": ""
+  }
+}

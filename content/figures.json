@@ -1,0 +1,106 @@
+{
+  "c24": {
+    "figure": "Figure 3",
+    "source": "https://arxiv.org/pdf/2605.29727v1",
+    "method": "PDF region rendered at 432 DPI",
+    "page": 6,
+    "cropBBoxPoints": [
+      107,
+      73,
+      503,
+      229
+    ],
+    "alt": "BASTION method overview: block-diffusion candidates and adaptive tree construction.",
+    "dimensions": [
+      2376,
+      936
+    ],
+    "asset": "assets/bastion.png"
+  },
+  "c17": {
+    "figure": "Figure 1",
+    "source": "https://arxiv.org/pdf/2507.10524v3",
+    "method": "PDF region rendered at 360 DPI",
+    "page": 1,
+    "cropBBoxPoints": [
+      63,
+      455,
+      533,
+      641
+    ],
+    "alt": "Mixture-of-Recursions overview: router, shared recursion block, and token-wise compute allocation.",
+    "dimensions": [
+      2350,
+      930
+    ],
+    "asset": "assets/mor.png"
+  },
+  "j2": {
+    "figure": "Figure 1(a)",
+    "source": "https://arxiv.org/html/2510.04800v3/assets/overview/hybrid_overview.png",
+    "method": "Original arXiv image, unchanged",
+    "cropBBoxPoints": null,
+    "alt": "Transformer–SSM hybrid architecture showing inter-layer and intra-layer combinations.",
+    "dimensions": [
+      2470,
+      1356
+    ],
+    "asset": "assets/hybrid.png"
+  },
+  "c15": {
+    "figure": "Figure 1",
+    "source": "https://arxiv.org/html/2410.20672v3/overview_convert_removed.png",
+    "method": "Retained existing figure; visually confirmed against official arXiv image",
+    "cropBBoxPoints": null,
+    "alt": "Vanilla, Recursive, and Relaxed Recursive Transformer architectures, including shared layers and per-layer LoRA modules.",
+    "dimensions": [
+      2362,
+      687
+    ],
+    "asset": "assets/recursive.png"
+  },
+  "c12": {
+    "figure": "Figure 1",
+    "source": "https://arxiv.org/html/2406.02657v2/overview.svg",
+    "method": "Original arXiv SVG rasterized at 2200px width; no crop",
+    "cropBBoxPoints": null,
+    "alt": "Block Transformer overview with embedder, block decoder, and token decoder.",
+    "dimensions": [
+      2200,
+      1087
+    ],
+    "asset": "assets/block.png"
+  },
+  "c6": {
+    "figure": "Figure 1(b)",
+    "source": "https://arxiv.org/html/2310.05424v1/concept_b.png",
+    "method": "Retained existing figure; visually confirmed against official arXiv image",
+    "cropBBoxPoints": null,
+    "alt": "FREE method with synchronized parallel decoding and adaptive threshold estimation.",
+    "dimensions": [
+      2442,
+      1064
+    ],
+    "asset": "assets/free.png"
+  },
+  "p2": {
+    "figure": "Figure 1",
+    "source": "https://arxiv.org/pdf/2609.08798v1",
+    "sourcePage": "https://arxiv.org/html/2609.08798v1#S1.F1",
+    "method": "Complete Figure 1 region rendered from the original paper PDF at 360 DPI; both overview panels and all five learning curves retained.",
+    "asset": "assets/oprd-figure-1.png",
+    "dimensions": [
+      2320,
+      1020
+    ],
+    "alt": "OPRD Figure 1: successive model transfer and multi-domain consolidation, with learning curves comparing OPRD against reinforcement learning and distillation baselines.",
+    "codeUrl": "https://github.com/raymin0223/on_policy_reverse_distillation",
+    "page": 1,
+    "cropBBoxPoints": [
+      70,
+      431,
+      534,
+      635
+    ]
+  }
+}

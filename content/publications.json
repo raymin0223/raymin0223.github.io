@@ -1,0 +1,850 @@
+[
+  {
+    "id": "p2",
+    "year": 2026,
+    "venue": "Preprint",
+    "fullVenue": "arXiv preprint",
+    "title": "Eliciting Weak-to-Strong Generalization with On-Policy Reverse Distillation",
+    "authors": [
+      "Youngrok Park*",
+      "Sangmin Bae*†",
+      "Hojung Jung",
+      "Jongwoo Ko",
+      "Yunseon Choi",
+      "Young Jin Kim",
+      "Pashmina Cameron",
+      "Aaron Courville",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "posttraining",
+      "agents"
+    ],
+    "url": "https://arxiv.org/abs/2609.08798",
+    "code": "https://github.com/raymin0223/on_policy_reverse_distillation",
+    "project": "",
+    "selected": true,
+    "image": "oprd-figure-1.png",
+    "oral": false,
+    "kind": "preprint",
+    "imageAlt": "OPRD Figure 1: successive model transfer and multi-domain consolidation, with learning curves comparing OPRD against reinforcement learning and distillation baselines.",
+    "imageWidth": 2320,
+    "imageHeight": 1020
+  },
+  {
+    "id": "c24",
+    "year": 2026,
+    "venue": "NeurIPS",
+    "fullVenue": "Advances in Neural Information Processing Systems",
+    "title": "BASTION: Budget-Aware Speculative Decoding with Tree-structured Block Diffusion Drafting",
+    "authors": [
+      "Soowon Oh*",
+      "Nam Cao*",
+      "Yujin Kim",
+      "Hojung Jung",
+      "Huzama Ahmad",
+      "Sangmin Bae†",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "compute"
+    ],
+    "url": "https://arxiv.org/abs/2605.29727",
+    "code": "https://github.com/kaist-ai-osi-lab/BASTION",
+    "project": "",
+    "selected": true,
+    "image": "bastion.png",
+    "oral": false,
+    "kind": "conference",
+    "imageAlt": "BASTION method overview: block-diffusion candidates and adaptive tree construction.",
+    "imageWidth": 2376,
+    "imageHeight": 936
+  },
+  {
+    "id": "c23",
+    "year": 2026,
+    "venue": "NeurIPS",
+    "fullVenue": "Advances in Neural Information Processing Systems",
+    "title": "LLM-as-a-Tutor: Policy-Aware Prompt Adaptation for Non-Verifiable RL",
+    "authors": [
+      "Yujin Kim*",
+      "Namgyu Ho*",
+      "Sangmin Hwang*",
+      "Joonkee Kim",
+      "Yongjin Yang",
+      "Sangmin Bae",
+      "Seungone Kim",
+      "Jaehun Jung",
+      "Se-Young Yun†",
+      "Hwanjun Song†"
+    ],
+    "topics": [
+      "other"
+    ],
+    "url": "https://arxiv.org/abs/2607.04412",
+    "code": "",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "conference"
+  },
+  {
+    "id": "c22",
+    "year": 2026,
+    "venue": "NeurIPS",
+    "fullVenue": "Advances in Neural Information Processing Systems",
+    "title": "DualDrift: Combining Forward and Reverse Drifts for One-Step Generative Modeling",
+    "authors": [
+      "Hojung Jung*",
+      "Juhyeong Kim*",
+      "Jaehyun Kwak",
+      "Boryeong Cho",
+      "Junhyeok Yang",
+      "Youngrok Park",
+      "Sangmin Bae",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "other"
+    ],
+    "url": "https://openreview.net/forum?id=BxHttc1DET",
+    "code": "",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "conference"
+  },
+  {
+    "id": "c21",
+    "year": 2026,
+    "venue": "NeurIPS",
+    "fullVenue": "Advances in Neural Information Processing Systems",
+    "title": "Temporal Alignment Guidance: On-manifold Sampling in Diffusion Models",
+    "authors": [
+      "Youngrok Park*",
+      "Hojung Jung*",
+      "Sangmin Bae",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "other"
+    ],
+    "url": "https://arxiv.org/abs/2510.11057",
+    "code": "",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "conference"
+  },
+  {
+    "id": "c20",
+    "year": 2026,
+    "venue": "EMNLP",
+    "fullVenue": "Conference on Empirical Methods in Natural Language Processing",
+    "title": "TAC-CoT: Tool-Empowered Implicit Chain-of-Thought via Interleaving Explicit Tokens",
+    "authors": [
+      "Juseon Do",
+      "Sangmin Bae",
+      "Jeesu Jung†",
+      "Hwanjun Song†"
+    ],
+    "topics": [
+      "agents"
+    ],
+    "url": "",
+    "code": "",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "conference"
+  },
+  {
+    "id": "j2",
+    "year": 2026,
+    "venue": "TMLR",
+    "fullVenue": "Transactions on Machine Learning Research",
+    "title": "Transformer-SSM Hybrid Language Models: Systematic Analysis and Design Insights",
+    "authors": [
+      "Sangmin Bae",
+      "Bilge Acun",
+      "Chien-Yu Lin",
+      "Haroun Habeeb",
+      "Seungyeon Kim",
+      "Liang Luo",
+      "Junjie Wang",
+      "Carole-Jean Wu"
+    ],
+    "topics": [
+      "architectures"
+    ],
+    "url": "https://arxiv.org/abs/2510.04800",
+    "code": "",
+    "project": "",
+    "selected": true,
+    "image": "hybrid.png",
+    "oral": false,
+    "kind": "journal",
+    "imageAlt": "Transformer–SSM hybrid architecture showing inter-layer and intra-layer combinations.",
+    "imageWidth": 2470,
+    "imageHeight": 1356
+  },
+  {
+    "id": "c19",
+    "year": 2026,
+    "venue": "Interspeech",
+    "fullVenue": "Interspeech",
+    "title": "MamTra: A Hybrid Mamba-Transformer Backbone for Speech Synthesis",
+    "authors": [
+      "Tan Dat Nguyen",
+      "Sangmin Bae",
+      "Joon Son Chung",
+      "Jihoon Kim†"
+    ],
+    "topics": [
+      "architectures"
+    ],
+    "url": "https://arxiv.org/abs/2603.12342",
+    "code": "",
+    "project": "https://mamtratts.github.io/",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "conference"
+  },
+  {
+    "id": "c18",
+    "year": 2026,
+    "venue": "ICLR",
+    "fullVenue": "International Conference on Learning Representations",
+    "title": "Composer: A Search Framework for Hybrid Neural Architecture Design",
+    "authors": [
+      "Bilge Acun*",
+      "Prasoon Sinha*",
+      "Newsha Ardalani",
+      "Sangmin Bae",
+      "Alicia Golden",
+      "Chien-Yu Lin",
+      "Meghana Madhyastha",
+      "Fei Sun",
+      "Neeraja J. Yadwadkar",
+      "Carole-Jean Wu†"
+    ],
+    "topics": [
+      "architectures"
+    ],
+    "url": "https://arxiv.org/abs/2510.00379",
+    "code": "",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "conference"
+  },
+  {
+    "id": "d",
+    "year": 2025,
+    "venue": "Ph.D. thesis",
+    "fullVenue": "KAIST",
+    "title": "Accelerating Large Language Model Inference via Early-Exiting Algorithms",
+    "authors": [
+      "Sangmin Bae"
+    ],
+    "topics": [
+      "compute"
+    ],
+    "url": "https://arxiv.org/abs/2509.05915",
+    "code": "",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "thesis"
+  },
+  {
+    "id": "c17",
+    "year": 2025,
+    "venue": "NeurIPS",
+    "fullVenue": "Advances in Neural Information Processing Systems",
+    "title": "Mixture-of-Recursions: Learning Dynamic Recursive Depths for Adaptive Token-Level Computation",
+    "authors": [
+      "Sangmin Bae*",
+      "Yujin Kim*",
+      "Reza Bayat*",
+      "Sungnyun Kim",
+      "Jiyoun Ha",
+      "Tal Schuster",
+      "Adam Fisch",
+      "Hrayr Harutyunyan",
+      "Ziwei Ji",
+      "Aaron Courville†",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "compute",
+      "architectures"
+    ],
+    "url": "https://arxiv.org/abs/2507.10524",
+    "code": "https://github.com/raymin0223/mixture_of_recursions",
+    "project": "",
+    "selected": true,
+    "image": "mor.png",
+    "oral": false,
+    "kind": "conference",
+    "imageAlt": "Mixture-of-Recursions overview: router, shared recursion block, and token-wise compute allocation.",
+    "imageWidth": 2350,
+    "imageHeight": 930
+  },
+  {
+    "id": "j1",
+    "year": 2025,
+    "venue": "TMLR",
+    "fullVenue": "Transactions on Machine Learning Research",
+    "title": "VSCoDe: Visual-Augmentation Selection for Contrastive Decoding",
+    "authors": [
+      "Sihyeon Kim*",
+      "Boryeong Cho*",
+      "Sangmin Bae",
+      "Sumyeong Ahn†",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "other"
+    ],
+    "url": "https://openreview.net/forum?id=CqSyPc9W7Y",
+    "code": "",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "journal"
+  },
+  {
+    "id": "c16",
+    "year": 2025,
+    "venue": "ICML",
+    "fullVenue": "International Conference on Machine Learning",
+    "title": "MoHAVE: Mixture of Hierarchical Audio-Visual Experts for Robust Speech Recognition",
+    "authors": [
+      "Sungnyun Kim",
+      "Kangwook Jang",
+      "Sangmin Bae",
+      "Sungwoo Cho",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "other"
+    ],
+    "url": "https://arxiv.org/abs/2502.10447",
+    "code": "",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "conference"
+  },
+  {
+    "id": "c15",
+    "year": 2025,
+    "venue": "ICLR",
+    "fullVenue": "International Conference on Learning Representations",
+    "title": "Relaxed Recursive Transformers: Effective Parameter Sharing with Layer-wise LoRA",
+    "authors": [
+      "Sangmin Bae",
+      "Adam Fisch",
+      "Hrayr Harutyunyan",
+      "Ziwei Ji",
+      "Seungyeon Kim",
+      "Tal Schuster†"
+    ],
+    "topics": [
+      "compute",
+      "architectures"
+    ],
+    "url": "https://arxiv.org/abs/2410.20672",
+    "code": "",
+    "project": "",
+    "selected": true,
+    "image": "recursive.png",
+    "oral": false,
+    "kind": "conference",
+    "imageAlt": "Vanilla, Recursive, and Relaxed Recursive Transformer architectures, including shared layers and per-layer LoRA modules.",
+    "imageWidth": 2362,
+    "imageHeight": 687
+  },
+  {
+    "id": "c14",
+    "year": 2025,
+    "venue": "ICLR",
+    "fullVenue": "International Conference on Learning Representations",
+    "title": "Multi-Task Corrupted Prediction for Learning Robust Audio-Visual Speech Representation",
+    "authors": [
+      "Sungnyun Kim",
+      "Sungwoo Cho",
+      "Sangmin Bae",
+      "Kangwook Jang",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "other"
+    ],
+    "url": "https://arxiv.org/abs/2504.18539",
+    "code": "https://github.com/sungnyun/cav2vec",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "conference"
+  },
+  {
+    "id": "c13",
+    "year": 2025,
+    "venue": "ICLR",
+    "fullVenue": "International Conference on Learning Representations",
+    "title": "Automated Filtering of Human Feedback Data for Aligning Text-to-Image Diffusion Models",
+    "authors": [
+      "Yongjin Yang*",
+      "Sihyeon Kim*",
+      "Hojung Jung",
+      "Sangmin Bae",
+      "SangMook Kim",
+      "Se-Young Yun†",
+      "Kimin Lee†"
+    ],
+    "topics": [
+      "learning"
+    ],
+    "url": "https://arxiv.org/abs/2410.10166",
+    "code": "https://github.com/YangYongJin/FiFA-Official-Repo",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "conference"
+  },
+  {
+    "id": "c12",
+    "year": 2024,
+    "venue": "NeurIPS",
+    "fullVenue": "Advances in Neural Information Processing Systems",
+    "title": "Block Transformer: Global-to-Local Language Modeling for Fast Inference",
+    "authors": [
+      "Namgyu Ho*",
+      "Sangmin Bae*",
+      "Taehyeon Kim",
+      "Hyunjik Jo",
+      "Yireun Kim",
+      "Tal Schuster",
+      "Adam Fisch",
+      "James Thorne†",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "architectures"
+    ],
+    "url": "https://arxiv.org/abs/2406.02657",
+    "code": "https://github.com/itsnamgyu/block-transformer",
+    "project": "",
+    "selected": true,
+    "image": "block.png",
+    "oral": false,
+    "kind": "conference",
+    "imageAlt": "Block Transformer overview with embedder, block decoder, and token decoder.",
+    "imageWidth": 2200,
+    "imageHeight": 1087
+  },
+  {
+    "id": "c11",
+    "year": 2024,
+    "venue": "SLT",
+    "fullVenue": "IEEE Spoken Language Technology Workshop",
+    "title": "Learning Video Temporal Dynamics with Asymmetric Cross-Modal Attention for Robust Audio-Visual Speech Recognition",
+    "authors": [
+      "Sungnyun Kim*",
+      "Kangwook Jang*",
+      "Sangmin Bae",
+      "Hoirin Kim†",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "other"
+    ],
+    "url": "https://arxiv.org/abs/2407.03563",
+    "code": "https://github.com/sungnyun/avsr-temporal-dynamics",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "conference"
+  },
+  {
+    "id": "c10",
+    "year": 2024,
+    "venue": "ACL",
+    "fullVenue": "Annual Meeting of the Association for Computational Linguistics",
+    "title": "Hard Prompts Made Interpretable: Sparse Entropy Regularization for Prompt Tuning with RL",
+    "authors": [
+      "Yunseon Choi",
+      "Sangmin Bae",
+      "Seonghyun Ban",
+      "Minchan Jeong",
+      "Chuheng Zhang",
+      "Lei Song",
+      "Li Zhao",
+      "Jiang Bian",
+      "Kee-Eung Kim†"
+    ],
+    "topics": [
+      "posttraining"
+    ],
+    "url": "https://arxiv.org/abs/2407.14733",
+    "code": "https://github.com/Youseob/PIN",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": true,
+    "kind": "conference"
+  },
+  {
+    "id": "c9",
+    "year": 2024,
+    "venue": "EMBC",
+    "fullVenue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society",
+    "title": "RepAugment: Input-Agnostic Representation-Level Augmentation for Respiratory Sound Classification",
+    "authors": [
+      "June-Woo Kim",
+      "Miika Toikkanen",
+      "Sangmin Bae",
+      "Minseok Kim†",
+      "Ho-Young Jung†"
+    ],
+    "topics": [
+      "other"
+    ],
+    "url": "https://arxiv.org/abs/2405.02996",
+    "code": "",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "conference"
+  },
+  {
+    "id": "c8",
+    "year": 2024,
+    "venue": "NAACL",
+    "fullVenue": "Conference of the North American Chapter of the Association for Computational Linguistics",
+    "title": "Carpe diem: On the Evaluation of World Knowledge in Lifelong Language Models",
+    "authors": [
+      "Yujin Kim",
+      "Jaehong Yoon",
+      "Seonghyeon Ye",
+      "Sangmin Bae",
+      "Namgyu Ho",
+      "Sung Ju Hwang†",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "other"
+    ],
+    "url": "https://arxiv.org/abs/2311.08106",
+    "code": "https://github.com/kimyuji/EvolvingQA_benchmark",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "conference"
+  },
+  {
+    "id": "c7",
+    "year": 2024,
+    "venue": "ICASSP",
+    "fullVenue": "IEEE International Conference on Acoustics, Speech and Signal Processing",
+    "title": "Stethoscope-guided Supervised Contrastive Learning for Cross-domain Adaptation on Respiratory Sound Classification",
+    "authors": [
+      "June-Woo Kim",
+      "Sangmin Bae",
+      "Won-Yang Cho",
+      "Byungjo Lee",
+      "Ho-Young Jung†"
+    ],
+    "topics": [
+      "other"
+    ],
+    "url": "https://arxiv.org/abs/2312.09603",
+    "code": "https://github.com/kaen2891/stethoscope-guided_supervised_contrastive_learning",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "conference"
+  },
+  {
+    "id": "w4",
+    "year": 2023,
+    "venue": "NeurIPS Workshop",
+    "fullVenue": "NeurIPS Workshop on Deep Generative Models for Health",
+    "title": "Adversarial Fine-tuning using Generated Respiratory Sound to Address Class Imbalance",
+    "authors": [
+      "June-Woo Kim",
+      "Chihyeon Yoon",
+      "Miika Toikkanen",
+      "Sangmin Bae",
+      "Ho-Young Jung†"
+    ],
+    "topics": [
+      "other"
+    ],
+    "url": "https://arxiv.org/abs/2311.06480",
+    "code": "https://github.com/kaen2891/adversarial_fine-tuning_using_generated_respiratory_sound",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "workshop"
+  },
+  {
+    "id": "w3",
+    "year": 2025,
+    "venue": "Preprint",
+    "fullVenue": "arXiv preprint",
+    "title": "Fine-tuned In-Context Learning Transformers are Excellent Tabular Data Classifiers",
+    "authors": [
+      "Felix den Breejen",
+      "Sangmin Bae",
+      "Stephen Cha",
+      "Se-Young Yun"
+    ],
+    "topics": [
+      "other"
+    ],
+    "url": "https://arxiv.org/abs/2405.13396",
+    "code": "https://github.com/FelixdenBreejen/TabForestPFN",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "preprint"
+  },
+  {
+    "id": "c6",
+    "year": 2023,
+    "venue": "EMNLP",
+    "fullVenue": "Conference on Empirical Methods in Natural Language Processing",
+    "title": "Fast and Robust Early-Exiting Framework for Autoregressive Language Models with Synchronized Parallel Decoding",
+    "authors": [
+      "Sangmin Bae*",
+      "Jongwoo Ko*",
+      "Hwanjun Song†",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "compute"
+    ],
+    "url": "https://arxiv.org/abs/2310.05424",
+    "code": "https://github.com/raymin0223/fast_robust_early_exit",
+    "project": "",
+    "selected": true,
+    "image": "free.png",
+    "oral": false,
+    "kind": "conference",
+    "imageAlt": "FREE method with synchronized parallel decoding and adaptive threshold estimation.",
+    "imageWidth": 2442,
+    "imageHeight": 1064
+  },
+  {
+    "id": "c5",
+    "year": 2023,
+    "venue": "Interspeech",
+    "fullVenue": "Interspeech",
+    "title": "Patch-Mix Contrastive Learning with Audio Spectrogram Transformer on Respiratory Sound Classification",
+    "authors": [
+      "Sangmin Bae*",
+      "June-Woo Kim*",
+      "Won-Yang Cho",
+      "Hyerim Baek",
+      "Soyoun Son",
+      "Byungjo Lee",
+      "Changwan Ha",
+      "Kyongpil Tae",
+      "Sungnyun Kim†",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "learning"
+    ],
+    "url": "https://arxiv.org/abs/2305.14032",
+    "code": "https://github.com/raymin0223/patch-mix_contrastive_learning",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "conference"
+  },
+  {
+    "id": "c4",
+    "year": 2023,
+    "venue": "CVPR",
+    "fullVenue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+    "title": "Coreset Sampling from Open-Set for Fine-Grained Self-Supervised Learning",
+    "authors": [
+      "Sungnyun Kim*",
+      "Sangmin Bae*",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "learning"
+    ],
+    "url": "https://arxiv.org/abs/2303.11101",
+    "code": "https://github.com/sungnyun/openssl-simcore",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "conference"
+  },
+  {
+    "id": "c3",
+    "year": 2023,
+    "venue": "CVPR",
+    "fullVenue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+    "title": "Re-thinking Federated Active Learning based on Inter-class Diversity",
+    "authors": [
+      "Sangmook Kim*",
+      "Sangmin Bae*",
+      "Hwanjun Song†",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "learning"
+    ],
+    "url": "https://arxiv.org/abs/2303.12317",
+    "code": "https://github.com/raymin0223/LoGo",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "conference"
+  },
+  {
+    "id": "c2",
+    "year": 2023,
+    "venue": "AAAI",
+    "fullVenue": "AAAI Conference on Artificial Intelligence",
+    "title": "Self-Contrastive Learning: Single-viewed Supervised Contrastive Framework using Sub-network",
+    "authors": [
+      "Sangmin Bae*",
+      "Sungnyun Kim*",
+      "Jongwoo Ko",
+      "Gihun Lee",
+      "Seungjong Noh",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "learning"
+    ],
+    "url": "https://arxiv.org/abs/2106.15499",
+    "code": "https://github.com/raymin0223/self-contrastive-learning",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": true,
+    "kind": "conference"
+  },
+  {
+    "id": "c1",
+    "year": 2022,
+    "venue": "NeurIPS",
+    "fullVenue": "Advances in Neural Information Processing Systems",
+    "title": "Preservation of Global Knowledge by Not-True Distillation in Federated Learning",
+    "authors": [
+      "Gihun Lee*",
+      "Minchan Jeong*",
+      "Yongjin Shin",
+      "Sangmin Bae",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "other"
+    ],
+    "url": "https://arxiv.org/abs/2106.03097",
+    "code": "https://github.com/Lee-Gihun/FedNTD",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "conference"
+  },
+  {
+    "id": "w2",
+    "year": 2020,
+    "venue": "NeurIPS Workshop",
+    "fullVenue": "NeurIPS Workshop on Self-Supervised Learning: Theory and Practice",
+    "title": "MixCo: Mix-up Contrastive Learning for Visual Representation",
+    "authors": [
+      "Sungnyun Kim*",
+      "Gihun Lee*",
+      "Sangmin Bae*",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "learning"
+    ],
+    "url": "https://arxiv.org/abs/2010.06300",
+    "code": "https://github.com/Lee-Gihun/MixCo-Mixup-Contrast",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "workshop"
+  },
+  {
+    "id": "p1",
+    "year": 2020,
+    "venue": "Preprint",
+    "fullVenue": "arXiv preprint",
+    "title": "Accurate and Fast Federated Learning via Combinatorial Multi-Armed Bandits",
+    "authors": [
+      "Taehyeon Kim*",
+      "Sangmin Bae*",
+      "Jin-woo Lee",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "learning"
+    ],
+    "url": "https://arxiv.org/abs/2012.03270",
+    "code": "",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "preprint"
+  },
+  {
+    "id": "w1",
+    "year": 2020,
+    "venue": "ICDM Workshop",
+    "fullVenue": "ICDM Workshop on Big Data Analysis for Smart Energy",
+    "title": "SIPA: A Simple Framework for Efficient Networks",
+    "authors": [
+      "Gihun Lee*",
+      "Sangmin Bae*",
+      "Jaehoon Oh",
+      "Se-Young Yun†"
+    ],
+    "topics": [
+      "architectures"
+    ],
+    "url": "https://arxiv.org/abs/2004.14476",
+    "code": "https://github.com/Lee-Gihun/MicroNet_OSI-AI",
+    "project": "",
+    "selected": false,
+    "image": "",
+    "oral": false,
+    "kind": "workshop"
+  }
+]

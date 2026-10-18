@@ -1,0 +1,31 @@
+{
+  "source_commit": "b467334b90bb74c0de644d0629fa981ce8abd944",
+  "files": {
+    "build.py": "bce8f0b65e078beac6c1bac7940811d497391fdf9f57175c083c0a2b8ca7e188",
+    "README.md": "dac1f0923f8a505867637c54f7dc544179aa9f257439d52336c4fac6467a1488",
+    "src/app.js": "20a80aa32c551861c03f362be0bec05a37056f73bdc88c764822a736b9338f7c",
+    "src/index.html": "8835881fd9e7191edd90afc40f515656bbba06a7d5bcdfba4cfc863eb7f129a3",
+    "src/styles.css": "a6bbd333fc02fedf3aaf12df89402173b66a992dedb1237e297e99b89266b451",
+    "content/citations.json": "5d94904d26b28cd5e38e87203e0706c6330677e1114d16611f01b53de5565506",
+    "content/figures.json": "572cd518b81b2fce970e4efc83148659c49573dca197d932d31567488bea95a9",
+    "content/publications.json": "d138840702c2518ce9f2bf90ba1bf428ac88d98d5870613a9aa68838613cf21a",
+    "dist/app.js": "20a80aa32c551861c03f362be0bec05a37056f73bdc88c764822a736b9338f7c",
+    "dist/assets/Sangmin_Bae_CV.pdf": "6155fdf551a78be2751fbbfb5a387cf280655ecefe15bde49acece64a8ac2820",
+    "dist/assets/bastion.png": "6d562256761f6b3fc42633700a7a609b3dea1236afc3b1a6117d8f603aeddb57",
+    "dist/assets/block.png": "07c9fb015a8dedb01f8638c09ebde62297145001bfc7d49434e5523e06dc89d7",
+    "dist/assets/favicon.svg": "9b84997051bd604123e4f227bedf21716910660fa05f33ace9ba97bf4362c404",
+    "dist/assets/free.png": "c36a3959dc8944779418af130df6f512434dd6e6be7a08ad608c38400b153393",
+    "dist/assets/hybrid.png": "03b7c2823a981af6f402b5a12d1596b93f67ff685897e062f27aa9033c118e7a",
+    "dist/assets/mor.png": "e77340d614de966490d22eb71f93d0ee4614be9e6e6ad0c7bed642d3462e7a15",
+    "dist/assets/noto-sans-400.woff": "5e36abdda295304c61b12ffc04b86bf59c92dc2478800eea98f63dc0e9279a19",
+    "dist/assets/noto-sans-500.woff": "17b9c30cc6e496eb50c03018721f633f64a04691d28b76102bad425527c762c3",
+    "dist/assets/noto-sans-600.woff": "135ae596bda3d4231109325bdeb7cf17ec626d5977a1fbe220566e319db90230",
+    "dist/assets/noto-sans-700.woff": "04b772a6fafdf86ede2a7d7a964eb5e1f79ed73954a6ee9aeb801f36c996d478",
+    "dist/assets/notosans-LICENSE.txt": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a",
+    "dist/assets/oprd-figure-1.png": "fc20743d22f3db12eb0ff482bd3dd9c647d54961f4d0b903a7458b3f88a4cec6",
+    "dist/assets/portrait.jpg": "c9746ff5e6c7cadaf46e432d7d30739833c08079c9804cd34d4025d1143f814d",
+    "dist/assets/recursive.png": "025fd49816f3bde59579af7d5661e6bee24e38474ca4d73dba60affba121b40d",
+    "dist/index.html": "71432413f6ae623443606f624eff8286df5f549b97ab348595cf71fece14076c",
+    "dist/styles.css": "a6bbd333fc02fedf3aaf12df89402173b66a992dedb1237e297e99b89266b451"
+  }
+}

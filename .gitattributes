@@ -1,0 +1,3 @@
+# Preserve the upstream font license verbatim, including its trailing spaces.
+/assets/notosans-LICENSE.txt -text whitespace=-blank-at-eol
+/dist/assets/notosans-LICENSE.txt -text whitespace=-blank-at-eol
