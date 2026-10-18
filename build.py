@@ -86,7 +86,7 @@ person = {
     "sameAs": ["https://scholar.google.com/citations?user=T5rHY14AAAAJ&hl=en", "https://github.com/raymin0223", "https://www.linkedin.com/in/raymin0223", "https://twitter.com/raymin0223"]
 }
 template = (ROOT / "src/index.html").read_text()
-for paper_id, placeholder in [("p2", "__OPRD_FIGURE__"), ("c17", "__MOR_FIGURE__"), ("c24", "__BASTION_FIGURE__")]:
+for paper_id, placeholder in [("p2", "__OPRD_FIGURE__"), ("j2", "__HYBRID_FIGURE__"), ("c17", "__MOR_FIGURE__")]:
     paper = next(p for p in papers if p["id"] == paper_id)
     template = template.replace(placeholder, figure_html(paper, "highlight-art figure-art"))
 output = template.replace("__SELECTED_PUBLICATIONS__", publication_groups(selected=True)).replace("__PUBLICATIONS__", publication_groups()).replace("__PUBLICATION_DATA__", json.dumps(papers, ensure_ascii=False).replace("</", "<\\/")).replace("__PERSON_SCHEMA__", json.dumps(person, ensure_ascii=False))
