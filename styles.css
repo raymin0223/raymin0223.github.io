@@ -34,7 +34,7 @@ dialog{border:1px solid var(--line);background:var(--surface);color:var(--ink);b
 .degree:last-child{border:0;padding-right:0}
 .cv-date{font-size:10px;letter-spacing:.5px;color:var(--subtle);line-height:1.7}
 .degree>.cv-date{color:var(--accent);margin-bottom:11px}
-.degree h3{font-size:16px;line-height:1.55;font-weight:500;margin-bottom:10px;letter-spacing:-.15px;min-height:50px}
+.degree h3{font-size:16px;line-height:1.55;font-weight:500;margin-bottom:10px;letter-spacing:-.15px;min-height:0}
 .degree p:not(.cv-date){font-size:12px;color:var(--muted);line-height:1.8}
 .degree .degree-school{font-weight:500;color:var(--ink)!important}
 .text-link.small{font-size:11px;margin-top:9px}
@@ -137,7 +137,7 @@ body{font-size:17px;line-height:1.7}
 .nav-link{font-size:15px}
 .header-cv{font-size:14px}
 .eyebrow{font-size:15px;letter-spacing:1px}
-.hero-statement{font-size:17px;line-height:1.5;letter-spacing:0}
+.hero-statement{font-size:19px;line-height:1.5;letter-spacing:0}
 .hero-intro{max-width:100%;font-size:18px;line-height:1.8}
 .hero-bio{font-size:17px;line-height:1.8}
 .social-links{font-size:14px;gap:18px}
@@ -258,7 +258,7 @@ body{font-size:17px;line-height:1.7}
   .header-cv{font-size:13px}
   .name-line{display:flex;align-items:center;min-height:136px}
   .portrait-column{top:45px}
-  .hero-statement{font-size:16px}
+  .hero-statement{font-size:18px}
   .hero-intro,.hero-bio{font-size:17px;line-height:1.8}
   .social-links{font-size:14px;gap:9px 18px}
   .recent-label .small-label{font-size:13px}
