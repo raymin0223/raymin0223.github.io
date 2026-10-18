@@ -249,7 +249,8 @@ body{font-size:17px;line-height:1.7}
   .navigation{top:65px;padding:15px 20px;gap:10px}
   .wordmark-name{font-size:17px}
   .header-cv{font-size:13px}
-  .hero .eyebrow{font-size:14px;max-width:calc(100% - 115px);line-height:1.7;letter-spacing:.6px}
+  .name-line{display:flex;align-items:center;min-height:136px}
+  .portrait-column{top:45px}
   .hero-statement{font-size:25px}
   .hero-intro,.hero-bio{font-size:17px;line-height:1.8}
   .social-links{font-size:14px;gap:9px 18px}
