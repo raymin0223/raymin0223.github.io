@@ -29,7 +29,7 @@ dialog{border:1px solid var(--line);background:var(--surface);color:var(--ink);b
 .selected-section .section-heading>.text-link{font-size:12px;white-space:nowrap}
 .cv-section .section-heading{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:0}
 .cv-section .section-heading>.text-link{font-size:12px;white-space:nowrap}
-.education-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;padding-top:26px}
+.education-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr) minmax(0,1fr);gap:24px;padding-top:26px}
 .degree{min-width:0;border-right:1px solid var(--line);padding-right:28px}
 .degree:last-child{border:0;padding-right:0}
 .cv-date{font-size:10px;letter-spacing:.5px;color:var(--subtle);line-height:1.7}
@@ -137,7 +137,7 @@ body{font-size:17px;line-height:1.7}
 .nav-link{font-size:15px}
 .header-cv{font-size:14px}
 .eyebrow{font-size:15px;letter-spacing:1px}
-.hero-statement{font-size:20px;line-height:1.5;letter-spacing:0}
+.hero-statement{font-size:17px;line-height:1.5;letter-spacing:0}
 .hero-intro{max-width:100%;font-size:18px;line-height:1.8}
 .hero-bio{font-size:17px;line-height:1.8}
 .social-links{font-size:14px;gap:18px}
@@ -178,9 +178,10 @@ body{font-size:17px;line-height:1.7}
 .degree h3{font-size:18px}
 .degree p:not(.cv-date){font-size:15px}
 .cv-entry-heading h3{font-size:20px}
-.cv-location{font-size:15px}
+.cv-location{font-size:14px}
 .cv-role,.cv-description{font-size:16px}
 .cv-row{grid-template-columns:190px minmax(0,1fr)}
+.cv-row>.cv-date{font-size:14px}
 .cv-panel>summary{font-size:16px}
 .project h4{font-size:17px}
 .project p{font-size:15px}
@@ -241,6 +242,12 @@ body{font-size:17px;line-height:1.7}
   .publication-year{grid-template-columns:60px minmax(0,1fr);gap:20px}
   .awards-grid,.patent-grid{grid-template-columns:1fr}
 }
+@media(min-width:641px) and (max-width:1200px){
+  .education-grid{grid-template-columns:1fr;gap:0;padding-top:0}
+  .degree{padding:20px 0;border-right:0;border-bottom:1px solid var(--line)}
+  .degree:last-child{padding:20px 0 0}
+  .degree h3{min-height:0}
+}
 @media(max-width:640px){
   body{font-size:16px}
   .highlights{grid-template-columns:1fr;gap:19px}
@@ -251,7 +258,7 @@ body{font-size:17px;line-height:1.7}
   .header-cv{font-size:13px}
   .name-line{display:flex;align-items:center;min-height:136px}
   .portrait-column{top:45px}
-  .hero-statement{font-size:18px}
+  .hero-statement{font-size:16px}
   .hero-intro,.hero-bio{font-size:17px;line-height:1.8}
   .social-links{font-size:14px;gap:9px 18px}
   .recent-label .small-label{font-size:13px}
@@ -273,10 +280,12 @@ body{font-size:17px;line-height:1.7}
   .result-count,.author-legend{font-size:14px}
   .reset-filters{font-size:14px}
   .cv-date{font-size:15px}
-  .degree h3{font-size:18px;min-height:0}
+  .education-grid{gap:0}
+  .degree{padding-right:0}
+  .degree h3{font-size:clamp(15px,4.6vw,18px);min-height:0}
   .cv-row{grid-template-columns:1fr;gap:8px}
   .cv-entry-heading h3{font-size:19px}
-  .cv-location{font-size:15px;white-space:normal}
+  .cv-location{font-size:14px;white-space:normal}
   .cv-description{font-size:16px}
   .award h3,.patent-entry h3{font-size:17px}
   .award p:not(.cv-date){font-size:15px}
