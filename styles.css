@@ -136,23 +136,23 @@ body{font-size:17px;line-height:1.7}
 .wordmark-name{font-size:18px}
 .nav-link{font-size:15px}
 .header-cv{font-size:14px}
-.eyebrow{font-size:14px;letter-spacing:1px}
+.eyebrow{font-size:15px;letter-spacing:1px}
 .hero-statement{font-size:30px}
 .hero-intro{font-size:18px;line-height:1.8}
 .hero-bio{font-size:17px;line-height:1.8}
 .social-links{font-size:14px;gap:18px}
 .social-links a{min-height:36px}
-.portrait-caption{font-size:13px}
-.small-label{font-size:11px;letter-spacing:1.3px}
+.portrait-caption{font-size:15px}
+.small-label{font-size:13px;letter-spacing:1.3px}
 .recent-label h2{font-size:30px}
 .news-item{font-size:16px;grid-template-columns:85px minmax(0,1fr);gap:18px;line-height:1.75}
-.news-item time{font-size:14px;letter-spacing:.35px}
+.news-item time{font-size:15px;letter-spacing:.35px}
 .news-list{gap:14px}
 .section-heading h2{font-size:32px}
 .direction h3{font-size:18px;line-height:1.4}
 .direction p{font-size:15px;line-height:1.75}
 .highlights-heading h3{font-size:20px}
-.highlight-meta{font-size:13px;line-height:1.8;letter-spacing:.4px}
+.highlight-meta{font-size:14px;line-height:1.8;letter-spacing:.4px}
 .highlight-content h4{font-size:24px;min-height:0;margin:10px 0 13px}
 .highlight-content p{font-size:16px;line-height:1.8;margin-bottom:18px}
 .text-link,.highlight-content .text-link,.selected-section .section-heading>.text-link,.cv-section .section-heading>.text-link{font-size:14px;min-height:34px}
@@ -160,45 +160,45 @@ body{font-size:17px;line-height:1.7}
 .year-heading{font-size:26px}
 .paper-title{font-size:19px;line-height:1.55}
 .publications-section .paper-title{font-size:18px;line-height:1.55}
-.paper-authors{font-size:14px;line-height:1.85}
+.paper-authors{font-size:15px;line-height:1.85}
 .paper-authors sup{font-size:10px}
-.venue-tag,.paper-oral{font-size:13px;letter-spacing:.2px}
+.venue-tag,.paper-oral{font-size:14px;letter-spacing:.2px}
 .paper-meta{flex-wrap:wrap}
 .paper-actions a,.citation-button{font-size:14px;min-height:36px}
 .paper-actions .icon{width:14px;height:14px}
-.author-legend{font-size:12px}
+.author-legend{font-size:14px}
 .search-field input{font-size:16px}
 .select-wrap select{font-size:14px;max-width:270px;padding-block:7px}
 .filter-bar{flex-wrap:wrap;gap:10px 24px}
-.result-count{font-size:12px}
+.result-count{font-size:14px}
 .reset-filters{font-size:14px}
 .button{font-size:14px}
 .empty-state p{font-size:16px}
-.cv-date,.project-date{font-size:14px;letter-spacing:.25px}
+.cv-date,.project-date{font-size:15px;letter-spacing:.25px}
 .degree h3{font-size:18px}
 .degree p:not(.cv-date){font-size:15px}
 .cv-entry-heading h3{font-size:20px}
-.cv-location{font-size:13px}
+.cv-location{font-size:15px}
 .cv-role,.cv-description{font-size:16px}
-.cv-row{grid-template-columns:180px minmax(0,1fr)}
+.cv-row{grid-template-columns:190px minmax(0,1fr)}
 .cv-panel>summary{font-size:16px}
 .project h4{font-size:17px}
 .project p{font-size:15px}
-.subtle-details summary,.details-body{font-size:14px}
+.subtle-details summary,.details-body{font-size:15px}
 .small-heading{font-size:16px}
-.venue-list span{font-size:12px}
+.venue-list span{font-size:14px}
 .teaching-list li{font-size:15px}
-.teaching-list span{font-size:13px}
-.award{grid-template-columns:80px minmax(0,1fr)}
+.teaching-list span{font-size:15px}
+.award{grid-template-columns:88px minmax(0,1fr)}
 .award h3,.patent-entry h3{font-size:17px}
 .award p:not(.cv-date){font-size:15px}
-.patent-record,.inventors>summary,.inventors p{font-size:14px}
-.footer-identity,.footer-links{font-size:14px}
-.footer-identity>span{font-size:13px}
+.patent-record,.inventors>summary,.inventors p{font-size:15px}
+.footer-identity,.footer-links{font-size:15px}
+.footer-identity>span{font-size:14px}
 #citation-paper-title{font-size:15px}
 #citation-content{font-size:13px}
-.citation-provenance,#citation-note,.citation-pending{font-size:13px}
-.dialog-actions{font-size:13px}
+.citation-provenance,#citation-note,.citation-pending{font-size:14px}
+.dialog-actions{font-size:14px}
 .toast{font-size:14px;white-space:normal}
 
 /* Paper figures retain their full content and natural proportions. */
@@ -211,7 +211,7 @@ body{font-size:17px;line-height:1.7}
 .highlight-content h4{min-height:2.8em}
 .highlight-links{gap:24px;flex-wrap:wrap}
 .figure-trigger{position:relative;cursor:zoom-in}
-.figure-open-label{position:absolute;bottom:8px;right:8px;display:flex;align-items:center;gap:5px;padding:4px 7px;background:rgba(255,255,255,.96);border:1px solid #d9e2ec;border-radius:4px;color:#52657a;font-size:11px;line-height:1.5;opacity:0;transition:opacity .15s;pointer-events:none}
+.figure-open-label{position:absolute;bottom:8px;right:8px;display:flex;align-items:center;gap:5px;padding:4px 7px;background:rgba(255,255,255,.96);border:1px solid #d9e2ec;border-radius:4px;color:#52657a;font-size:13px;line-height:1.5;opacity:0;transition:opacity .15s;pointer-events:none}
 .figure-open-label .icon{width:13px;height:13px}
 .figure-trigger:hover .figure-open-label,.figure-trigger:focus-visible .figure-open-label{opacity:1}
 .selected-section .paper-row{grid-template-columns:minmax(0,1fr) 320px;gap:30px;align-items:center;padding-block:30px}
@@ -233,7 +233,7 @@ body{font-size:17px;line-height:1.7}
   .degree{padding-right:16px}
   .cv-entry-heading{display:block}
   .cv-location{display:block;margin-top:4px}
-  .cv-row{grid-template-columns:155px minmax(0,1fr);gap:24px}
+  .cv-row{grid-template-columns:170px minmax(0,1fr);gap:24px}
 }
 @media(max-width:800px){
   .selected-section .paper-row{grid-template-columns:1fr;gap:18px}
@@ -249,14 +249,14 @@ body{font-size:17px;line-height:1.7}
   .navigation{top:65px;padding:15px 20px;gap:10px}
   .wordmark-name{font-size:17px}
   .header-cv{font-size:13px}
-  .hero .eyebrow{font-size:13px;max-width:calc(100% - 115px);line-height:1.7;letter-spacing:.6px}
+  .hero .eyebrow{font-size:14px;max-width:calc(100% - 115px);line-height:1.7;letter-spacing:.6px}
   .hero-statement{font-size:25px}
   .hero-intro,.hero-bio{font-size:17px;line-height:1.8}
   .social-links{font-size:14px;gap:9px 18px}
-  .recent-label .small-label{font-size:11px}
+  .recent-label .small-label{font-size:13px}
   .recent-label h2,.section-heading h2,.publications-section h2{font-size:28px}
   .news-item{font-size:15px;grid-template-columns:76px minmax(0,1fr);gap:12px}
-  .news-item time{font-size:14px;padding-top:3px}
+  .news-item time{font-size:15px;padding-top:3px}
   .direction h3{font-size:17px}
   .direction p{font-size:14px}
   .highlights-heading h3{font-size:19px}
@@ -265,24 +265,24 @@ body{font-size:17px;line-height:1.7}
   .selected-section .section-heading>.text-link,.cv-section .section-heading>.text-link,.publications-section .scholar-link{font-size:14px}
   .publication-year{display:block}
   .paper-title,.publications-section .paper-title{font-size:18px}
-  .paper-authors{font-size:14px}
+  .paper-authors{font-size:15px}
   .selected-section .paper-row{padding-block:25px}
   .select-wrap select{font-size:14px;max-width:260px}
   .search-field input{font-size:16px}
-  .result-count,.author-legend{font-size:12px}
+  .result-count,.author-legend{font-size:14px}
   .reset-filters{font-size:14px}
-  .cv-date{font-size:14px}
+  .cv-date{font-size:15px}
   .degree h3{font-size:18px;min-height:0}
   .cv-row{grid-template-columns:1fr;gap:8px}
   .cv-entry-heading h3{font-size:19px}
-  .cv-location{font-size:13px;white-space:normal}
+  .cv-location{font-size:15px;white-space:normal}
   .cv-description{font-size:16px}
   .award h3,.patent-entry h3{font-size:17px}
   .award p:not(.cv-date){font-size:15px}
-  .footer-links{font-size:14px;gap:12px 20px}
+  .footer-links{font-size:15px;gap:12px 20px}
   .figure-dialog{padding:16px;width:calc(100% - 20px)}
   .figure-dialog h2{font-size:16px}
   .figure-viewer{padding:4px}
-  .figure-dialog-links .text-link{font-size:13px}
+  .figure-dialog-links .text-link{font-size:14px}
   #citation-content{font-size:12px}
 }
