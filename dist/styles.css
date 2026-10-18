@@ -136,7 +136,7 @@ body{font-size:17px;line-height:1.7}
 .wordmark-name{font-size:18px}
 .nav-link{font-size:15px}
 .header-cv{font-size:14px}
-.eyebrow{font-size:12px;letter-spacing:1px}
+.eyebrow{font-size:14px;letter-spacing:1px}
 .hero-statement{font-size:30px}
 .hero-intro{font-size:18px;line-height:1.8}
 .hero-bio{font-size:17px;line-height:1.8}
@@ -146,13 +146,13 @@ body{font-size:17px;line-height:1.7}
 .small-label{font-size:11px;letter-spacing:1.3px}
 .recent-label h2{font-size:30px}
 .news-item{font-size:16px;grid-template-columns:85px minmax(0,1fr);gap:18px;line-height:1.75}
-.news-item time{font-size:12px;letter-spacing:.35px}
+.news-item time{font-size:14px;letter-spacing:.35px}
 .news-list{gap:14px}
 .section-heading h2{font-size:32px}
 .direction h3{font-size:18px;line-height:1.4}
 .direction p{font-size:15px;line-height:1.75}
 .highlights-heading h3{font-size:20px}
-.highlight-meta{font-size:11px;line-height:1.8;letter-spacing:.4px}
+.highlight-meta{font-size:13px;line-height:1.8;letter-spacing:.4px}
 .highlight-content h4{font-size:24px;min-height:0;margin:10px 0 13px}
 .highlight-content p{font-size:16px;line-height:1.8;margin-bottom:18px}
 .text-link,.highlight-content .text-link,.selected-section .section-heading>.text-link,.cv-section .section-heading>.text-link{font-size:14px;min-height:34px}
@@ -162,7 +162,7 @@ body{font-size:17px;line-height:1.7}
 .publications-section .paper-title{font-size:18px;line-height:1.55}
 .paper-authors{font-size:14px;line-height:1.85}
 .paper-authors sup{font-size:10px}
-.venue-tag,.paper-oral{font-size:12px;letter-spacing:.2px}
+.venue-tag,.paper-oral{font-size:13px;letter-spacing:.2px}
 .paper-meta{flex-wrap:wrap}
 .paper-actions a,.citation-button{font-size:14px;min-height:36px}
 .paper-actions .icon{width:14px;height:14px}
@@ -174,7 +174,7 @@ body{font-size:17px;line-height:1.7}
 .reset-filters{font-size:14px}
 .button{font-size:14px}
 .empty-state p{font-size:16px}
-.cv-date,.project-date{font-size:12px;letter-spacing:.25px}
+.cv-date,.project-date{font-size:14px;letter-spacing:.25px}
 .degree h3{font-size:18px}
 .degree p:not(.cv-date){font-size:15px}
 .cv-entry-heading h3{font-size:20px}
@@ -189,11 +189,12 @@ body{font-size:17px;line-height:1.7}
 .venue-list span{font-size:12px}
 .teaching-list li{font-size:15px}
 .teaching-list span{font-size:13px}
+.award{grid-template-columns:80px minmax(0,1fr)}
 .award h3,.patent-entry h3{font-size:17px}
 .award p:not(.cv-date){font-size:15px}
 .patent-record,.inventors>summary,.inventors p{font-size:14px}
 .footer-identity,.footer-links{font-size:14px}
-.footer-identity>span{font-size:12px}
+.footer-identity>span{font-size:13px}
 #citation-paper-title{font-size:15px}
 #citation-content{font-size:13px}
 .citation-provenance,#citation-note,.citation-pending{font-size:13px}
@@ -248,14 +249,14 @@ body{font-size:17px;line-height:1.7}
   .navigation{top:65px;padding:15px 20px;gap:10px}
   .wordmark-name{font-size:17px}
   .header-cv{font-size:13px}
-  .hero .eyebrow{font-size:11px;max-width:calc(100% - 115px);line-height:1.7;letter-spacing:.6px}
+  .hero .eyebrow{font-size:13px;max-width:calc(100% - 115px);line-height:1.7;letter-spacing:.6px}
   .hero-statement{font-size:25px}
   .hero-intro,.hero-bio{font-size:17px;line-height:1.8}
   .social-links{font-size:14px;gap:9px 18px}
   .recent-label .small-label{font-size:11px}
   .recent-label h2,.section-heading h2,.publications-section h2{font-size:28px}
   .news-item{font-size:15px;grid-template-columns:76px minmax(0,1fr);gap:12px}
-  .news-item time{font-size:11px;padding-top:3px}
+  .news-item time{font-size:14px;padding-top:3px}
   .direction h3{font-size:17px}
   .direction p{font-size:14px}
   .highlights-heading h3{font-size:19px}
@@ -270,7 +271,7 @@ body{font-size:17px;line-height:1.7}
   .search-field input{font-size:16px}
   .result-count,.author-legend{font-size:12px}
   .reset-filters{font-size:14px}
-  .cv-date{font-size:12px}
+  .cv-date{font-size:14px}
   .degree h3{font-size:18px;min-height:0}
   .cv-row{grid-template-columns:1fr;gap:8px}
   .cv-entry-heading h3{font-size:19px}
