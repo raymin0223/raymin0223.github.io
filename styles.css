@@ -137,8 +137,8 @@ body{font-size:17px;line-height:1.7}
 .nav-link{font-size:15px}
 .header-cv{font-size:14px}
 .eyebrow{font-size:15px;letter-spacing:1px}
-.hero-statement{font-size:30px}
-.hero-intro{font-size:18px;line-height:1.8}
+.hero-statement{font-size:20px;line-height:1.5;letter-spacing:0}
+.hero-intro{max-width:100%;font-size:18px;line-height:1.8}
 .hero-bio{font-size:17px;line-height:1.8}
 .social-links{font-size:14px;gap:18px}
 .social-links a{min-height:36px}
@@ -251,7 +251,7 @@ body{font-size:17px;line-height:1.7}
   .header-cv{font-size:13px}
   .name-line{display:flex;align-items:center;min-height:136px}
   .portrait-column{top:45px}
-  .hero-statement{font-size:25px}
+  .hero-statement{font-size:18px}
   .hero-intro,.hero-bio{font-size:17px;line-height:1.8}
   .social-links{font-size:14px;gap:9px 18px}
   .recent-label .small-label{font-size:13px}
