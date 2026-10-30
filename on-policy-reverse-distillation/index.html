@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#e95655">
+  <meta name="description" content="On-Policy Reverse Distillation transfers weak-model post-training gains to stronger students, accelerating verifier-driven learning beyond the teacher.">
+  <meta property="og:title" content="OPRD: On-Policy Reverse Distillation">
+  <meta property="og:description" content="Eliciting Weak-to-Strong Generalization with On-Policy Reverse Distillation. Explore the method, learning curves, and results.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.raymin0223.com/on-policy-reverse-distillation/">
+  <meta property="og:url" content="https://www.raymin0223.com/on-policy-reverse-distillation/">
+  <meta property="og:image" content="https://www.raymin0223.com/on-policy-reverse-distillation/assets/figure1.png">
+  <meta property="og:image:alt" content="OPRD Figure 1: successive model transfer and multi-domain consolidation">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>OPRD: On-Policy Reverse Distillation</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e95655'/%3E%3Cpath d='M7 23V15M16 23V10M25 23V5' stroke='white' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<main id="main">
+  <header class="publication-header container">
+    <h1>Eliciting Weak-to-Strong Generalization<br class="desktop-break"> with On-Policy Reverse Distillation</h1>
+    <p class="authors">Youngrok Park<sup>1,*</sup> <span>Sangmin Bae<sup>1,*,†</sup></span> <span>Hojung Jung<sup>1</sup></span> <span>Jongwoo Ko<sup>2</sup></span> <span>Yunseon Choi<sup>3</sup></span><br><span>Young Jin Kim<sup>2</sup></span> <span>Pashmina Cameron<sup>2</sup></span> <span>Aaron Courville<sup>4,5,6</sup></span> <span>Se-Young Yun<sup>1</sup></span></p>
+    <p class="affiliations"><span><sup>1</sup> KAIST AI</span><span><sup>2</sup> Microsoft</span><span><sup>3</sup> University of Toronto</span><span><sup>4</sup> Mila</span><span><sup>5</sup> Université de Montréal</span><span><sup>6</sup> CIFAR AI Chair</span></p>
+    <p class="contribution">* Equal Contribution · † Project Lead</p>
+    <div class="publication-links">
+      <a class="paper-button" href="https://arxiv.org/pdf/2609.08798" target="_blank" rel="noopener"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 2h7l4 4v12H5zM12 2v5h4M8 11h5M8 14h5"/></svg>Paper</a>
+      <a class="paper-button" href="https://arxiv.org/abs/2609.08798" target="_blank" rel="noopener"><span class="arxiv-icon" aria-hidden="true">a<span>X</span>iv</span>arXiv</a>
+      <a class="paper-button" href="https://github.com/raymin0223/on_policy_reverse_distillation" target="_blank" rel="noopener"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 5-5 5 5 5m6-10 5 5-5 5m-2-12-2 14"/></svg>Code</a>
+      <a class="paper-button" href="#results"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 2v15h15M6 13V9M11 13V5M16 13V2"/></svg>Results</a>
+      <a class="paper-button" href="#bibtex"><span class="quote-icon" aria-hidden="true">”</span>BibTeX</a>
+    </div>
+  </header>
+
+  <section class="section container motivation-section" id="motivation">
+    <h2 class="section-title">Research Motivation</h2>
+    <p class="section-intro">Can a weaker, post-trained model accelerate a stronger student’s learning while allowing the student to surpass its teacher?</p>
+    <figure class="overview-figure"><a href="assets/figure1.png" target="_blank" rel="noopener" aria-label="Open Figure 1 at full resolution"><img src="assets/figure1.png" width="2385" height="1169" alt="Figure 1: successive model transfer and multi-domain consolidation, with OPRD learning curves compared against RL and distillation baselines." fetchpriority="high"></a><figcaption><strong>Figure 1.</strong> A post-trained 4B model guides an 8B successor (left); four specialized 4B teachers guide a single 8B student (right). Dashed lines mark teacher performance. OPRD accelerates learning and lets the student improve beyond its teachers.</figcaption></figure>
+    <div class="motivation-settings"><p><strong>Successive model transfer.</strong> Reuse the post-training gains of a smaller model to help train a more capable successor.</p><p><strong>Multi-domain consolidation.</strong> Combine guidance from smaller specialists into one stronger student, using the matching teacher for each task.</p></div>
+    <p class="motivation-link"><a href="#method">How OPRD transfers teacher guidance ↓</a></p>
+  </section>
+
+  <section class="teaser container" aria-label="Animated learning curves">
+    <div class="media-heading"><h2>Learning beyond the weak teacher</h2><span>Qwen3 · 4B → 8B</span></div>
+    <div class="video-frame"><video id="successive-video" class="learning-video" muted loop playsinline controls preload="metadata" poster="assets/successive-learning.png" aria-label="Animated mathematics and Reasoning Gym learning curves from update zero to 150"><source src="assets/successive-learning.webm" type="video/webm"><source src="assets/successive-learning.mp4" type="video/mp4"><a href="assets/successive-learning.gif">View the learning-curve animation</a></video></div>
+    <div class="media-tools"><button class="text-button play-toggle" data-toggle="successive-video" aria-label="Play successive-model learning animation">Play</button><button class="text-button" data-replay="successive-video">Replay</button><input class="video-seek" type="range" min="0" max="1000" value="0" step="1" data-seek="successive-video" aria-label="Successive-model animation progress"><a href="assets/successive-learning.gif" download>Download GIF</a></div>
+    <p class="teaser-caption"><strong>On-Policy Reverse Distillation (OPRD)</strong> uses the post-training gains of a weaker teacher to accelerate a stronger student’s own reinforcement learning. The student learns faster and continues improving beyond its teacher.</p>
+    <details class="curve-values"><summary>View checkpoint values</summary><div class="curve-value-grid" id="curve-values"></div></details>
+  </section>
+
+  <section class="abstract-section section-band" id="abstract"><div class="reading-container">
+    <h2 class="section-title">Abstract</h2>
+    <p>Weak-to-strong generalization asks whether stronger models can learn from weaker supervisors and surpass them. This question is particularly important for successive model generations and multi-domain consolidation, where repeating frontier-scale post-training from scratch can be prohibitively expensive. Yet conventional distillation treats the weak teacher as an optimization target, potentially imposing its capacity ceiling on the student. We introduce On-Policy Reverse Distillation (OPRD), which evaluates the teacher’s policy shift relative to its reference policy on student rollouts and amplifies the component of the student’s verifier-driven policy gradient along that direction. By rescaling only verifier-supported updates, OPRD preserves the stationary points of policy optimization while accelerating learning beyond the teacher. Our evaluations cover mathematical reasoning, logical reasoning, code generation, and visual tool use. In both successive model transfer and multi-teacher distillation, OPRD achieves higher performance with fewer student updates than existing RL and distillation approaches. Stylistically, OPRD students remain closer to models trained with verifier-based RL alone than to their weak teachers, suggesting that teacher guidance accelerates rather than redirects the students’ own optimization. Results in conventional strong-to-weak distillation further demonstrate that OPRD effectively combines verifier-driven policy optimization with teacher guidance regardless of capacity ordering.</p>
+  </div></section>
+
+  <section class="section container" id="method">
+    <h2 class="section-title">Method</h2>
+    <p class="section-intro">Instead of treating the weak teacher as a target to match, OPRD uses what it learned to amplify the student’s verifier-driven policy gradient.</p>
+    <figure class="method-figure"><a href="assets/method.pdf" target="_blank" rel="noopener" aria-label="Open the full-resolution OPRD method figure"><img src="assets/method.webp" width="2200" height="767" alt="OPRD: student rollouts yield a verifier-driven gradient; the teacher and its reference yield a policy-shift direction; gradient projection and amplification let the student learn beyond the teacher." loading="lazy"></a><figcaption><strong>Figure 2.</strong> At student-visited prefixes, extract the teacher’s policy shift relative to its reference policy, project the student gradient onto that direction, and amplify the projected component.</figcaption></figure>
+    <div class="method-explanation"><p><strong>Transfer the teacher’s learning.</strong> The centered difference between the teacher and reference logits isolates the change acquired during post-training. OPRD uses its unit direction <span class="math">d</span>.</p><p><strong>Preserve the student’s objective.</strong> Scale the gradient component along <span class="math">d</span>, leaving the orthogonal component unchanged. Verifier-supported departures from the teacher are gradually amplified as training progresses.</p></div>
+    <div class="main-equation" aria-label="The OPRD gradient equals the student gradient plus lambda times its projection onto the teacher direction">g̃<sub>t</sub> = g<sub>t</sub> + <span>λ<sub>t</sub> (d<sub>t</sub><sup>T</sup> g<sub>t</sub>) d<sub>t</sub></span></div>
+    <p class="theory-caption">For nonnegative scaling, the transformation preserves stationary points in token-level logit space for a fixed response and adds a nonnegative first-order alignment gain.</p>
+    <details class="geometry-details"><summary>Explore the gradient scaling interactively</summary><div class="method-layout"><div class="method-copy"><p class="lead">The student’s gradient stays in charge.</p><p>OPRD amplifies the part of the verifier-driven gradient that lies along the teacher’s policy-shift direction. If the student’s update opposes that direction, the correction reinforces that verifier-supported departure.</p><div class="formula">g̃ = g + <span>λ(d<sup>T</sup>g)d</span></div><p class="formula-note">d: unit teacher-shift direction · g: student policy gradient</p><div class="method-controls"><fieldset><legend>Student–teacher alignment</legend><div class="segmented" role="group" aria-label="Alignment"><button data-alignment="positive" aria-pressed="true">Aligned</button><button data-alignment="negative" aria-pressed="false">Opposed</button></div></fieldset><label class="range-label" for="strength">Amplification strength <output id="strength-value" for="strength">λ = 0.5</output></label><input type="range" id="strength" min="0" max="2" step="0.1" value="0.5"><p class="control-note">Explore the local geometry. During training, OPRD gradually warms up the negative-alignment branch.</p></div></div>
+      <div class="vector-panel"><div class="panel-top"><span class="mono">GRADIENT GEOMETRY</span><span class="small-label">Illustrative · 2D</span></div><svg id="vector-chart" viewBox="0 0 560 365" role="img" aria-labelledby="vector-title vector-description"><title id="vector-title">OPRD gradient projection</title><desc id="vector-description">The teacher-aligned component grows while the orthogonal component remains unchanged.</desc><defs><pattern id="vector-grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#e6e9f1" stroke-width="1"/></pattern><marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10" fill="#818998"/></marker><marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10" fill="#1729e8"/></marker></defs><rect x="28" y="22" width="504" height="310" fill="url(#vector-grid)"/><line x1="45" y1="282" x2="507" y2="282" stroke="#b7beca" stroke-width="1.5" marker-end="url(#arrow-gray)"/><text x="330" y="312" fill="#626b7c" font-size="15">Teacher direction d</text><line id="projection-guide" stroke="#97a0af" stroke-dasharray="5 5"/><line id="student-vector" stroke="#818998" stroke-width="3" marker-end="url(#arrow-gray)"/><line id="scaled-vector" stroke="#1729e8" stroke-width="4" marker-end="url(#arrow-blue)"/><line id="amplified-component" stroke="#1729e8" stroke-width="5"/><circle cx="280" cy="282" r="5" fill="#11182a"/><text id="student-label" fill="#626b7c" font-size="18">g</text><text id="scaled-label" fill="#1729e8" font-size="20" font-weight="700">g̃</text><text x="291" y="306" font-size="14" fill="#626b7c">0</text></svg><div class="vector-legend"><span><i class="legend-mark student"></i>Student gradient</span><span><i class="legend-mark blue"></i>OPRD gradient</span></div><p id="geometry-caption" aria-live="polite">Teacher-aligned progress is amplified by 1.5×. The orthogonal component is unchanged.</p></div></div></details>
+  </section>
+
+  <section class="section section-band" id="results"><div class="container">
+    <h2 class="section-title">Experimental Results</h2>
+    <p class="section-intro">We evaluate successive model transfer on mathematics, logical reasoning, code generation, and agentic visual tool use. OPRD improves the checkpoint-average score over the strongest training baseline in all four domains.</p>
+    <div class="results-tabs" role="group" aria-label="Results domain"><button data-domain="math" aria-pressed="true">Mathematics</button><button data-domain="reasoning" aria-pressed="false">Reasoning Gym</button><button data-domain="code" aria-pressed="false">Code generation</button><button data-domain="agent" aria-pressed="false">Visual tool use</button></div>
+    <div class="results-context"><span id="result-pair">QWEN3 · 4B → 8B</span><span><strong id="result-score">51.91</strong>% OPRD · <strong id="result-gain">+7.92 pp</strong> over the strongest baseline</span></div>
+    <p id="score-description" class="sr-only">OPRD checkpoint average</p>
+    <div class="comparison-layout"><div class="results-table-panel"><div class="table-scroll" tabindex="0" aria-label="Scrollable benchmark results"><h3 id="table-title" class="sr-only">Mathematical reasoning</h3><table id="results-table"></table></div><p id="table-note" class="table-note"></p></div><div class="comparison-bars"><h3>Average score (%)</h3><div id="result-bars" class="result-bars" aria-label="Average score comparison"></div></div></div>
+    <p id="results-aggregation" class="figure-caption">Teacher and initial-student rows use fixed checkpoints. Trained rows average evaluations at updates 30, 60, 90, 120, and 150. Bold marks the best trained-policy score, matching the paper.</p>
+    <div class="section-links"><a href="assets/results.csv" download>Download results (CSV)</a><a href="assets/paper.pdf" target="_blank" rel="noopener">Paper (arXiv v2 PDF)</a></div>
+  </div></section>
+
+  <section class="section container" id="multi-teacher">
+    <h2 class="section-title">From Four Specialists to One Student</h2>
+    <p class="section-intro">Four task-specific Qwen3-4B-Base teachers guide a single Qwen3-8B-Base student. Each training example uses the teacher for its task.</p>
+    <figure class="teacher-overview"><img src="assets/teachers.webp" width="2200" height="1072" alt="Four small specialist teachers transfer their learned capabilities into a single stronger student." loading="lazy"></figure>
+    <div class="video-frame"><video id="multi-video" class="learning-video" muted loop playsinline controls preload="metadata" poster="assets/multiteacher-learning.png" aria-label="Animated multi-teacher learning curves for Logic, Algorithms, and Games up to 300 updates"><source src="assets/multiteacher-learning.webm" type="video/webm"><source src="assets/multiteacher-learning.mp4" type="video/mp4"><a href="assets/multiteacher-learning.gif">View the multi-teacher animation</a></video></div>
+    <div class="media-tools"><button class="text-button play-toggle" data-toggle="multi-video" aria-label="Play multi-teacher learning animation">Play</button><button class="text-button" data-replay="multi-video">Replay</button><input class="video-seek" type="range" min="0" max="1000" value="0" step="1" data-seek="multi-video" aria-label="Multi-teacher animation progress"><a href="assets/multiteacher-learning.gif" download>Download GIF</a></div>
+    <p class="figure-caption">Logic averages Knights &amp; Knaves and Quantum Lock; Algorithms is String Manipulation; Games is Countdown. Dashed lines indicate the corresponding specialist teachers. Markers show measured checkpoints; lines connect those observations.</p>
+    <p class="result-takeaway">Across all four tasks, OPRD reaches <strong>58.77%</strong> average Pass@1: <strong>11.09 points above Mix-RL</strong> and <strong>14.12 points above the specialist average</strong>, averaged over updates 60, 120, 180, 240, and 300.</p>
+  </section>
+
+  <section class="section section-band" id="analysis"><div class="container">
+    <h2 class="section-title">Further Analysis</h2>
+    <div class="analysis-grid"><article><h3>Student reasoning and response style</h3><p>On AIME’24, OPRD students remain stylistically closer to verifier-only RL students than to their weak teachers, suggesting that teacher guidance accelerates the student’s own optimization.</p><figure><a href="assets/style.pdf" target="_blank" rel="noopener" aria-label="Open the response-style analysis"><img src="assets/style.webp" width="2200" height="1873" alt="Response-style category fingerprints on AIME24, comparing teacher, RL, OPD, and OPRD." loading="lazy"></a><figcaption>Response-style analysis from the manuscript.</figcaption></figure></article><article><h3>Strong-to-weak distillation</h3><p>The same mechanism also benefits a smaller student learning from a stronger teacher. OPRD outperforms OPD on both reported benchmarks.</p><div class="table-scroll"><table class="strong-results"><caption class="sr-only">Strong-to-weak scores in percent, averaged over five checkpoints</caption><thead><tr><th scope="col">Policy</th><th scope="col">AIME’24<br><span>8B → 1.7B</span></th><th scope="col">Knights &amp; Knaves<br><span>8B-Base → 0.6B</span></th></tr></thead><tbody><tr><th scope="row">GRPO</th><td>18.92</td><td>20.60</td></tr><tr><th scope="row">OPD</th><td>29.79</td><td>20.20</td></tr><tr><th scope="row">KDRL</th><td>25.33</td><td>33.70</td></tr><tr class="oprd-row"><th scope="row">OPRD</th><td><strong>33.58</strong></td><td><strong>49.40</strong></td></tr></tbody></table></div><p class="figure-caption">Mean@16 for AIME’24 and Pass@1 for Knights &amp; Knaves. Trained-policy scores average five checkpoints.</p><p class="analysis-note">OPRD can use teacher guidance without requiring the student to reproduce the teacher’s full policy.</p></article></div>
+  </div></section>
+
+  <section class="section reading-container" id="bibtex">
+    <h2 class="section-title">BibTeX</h2>
+    <p class="citation-intro">If you find this work useful, please consider citing our paper.</p>
+    <div class="citation-panel"><div class="citation-toolbar"><a href="assets/citation.bib" download>Download .bib</a><button id="copy-citation" class="copy-button">Copy BibTeX</button></div><pre id="citation" tabindex="0">@article{park2026eliciting,
+  title={Eliciting weak-to-strong generalization with on-policy reverse distillation},
+  author={Park, Youngrok and Bae, Sangmin and Jung, Hojung and Ko, Jongwoo and Choi, Yunseon and Kim, Young Jin and Cameron, Pashmina and Courville, Aaron and Yun, Se-Young},
+  journal={arXiv preprint arXiv:2609.08798},
+  year={2026}
+}</pre></div>
+    <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
+    <p class="citation-source">Citation for <a href="https://arxiv.org/abs/2609.08798" target="_blank" rel="noopener">arXiv:2609.08798</a>.</p>
+  </section>
+</main>
+<footer><p><a href="https://arxiv.org/abs/2609.08798" target="_blank" rel="noopener">OPRD · On-Policy Reverse Distillation</a></p><p>Page layout inspired by <a href="https://token-verse.github.io/" target="_blank" rel="noopener">TokenVerse</a>. Figures and results from the OPRD manuscript.</p></footer>
+</body>
+</html>

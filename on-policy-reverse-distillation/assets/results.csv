@@ -1,0 +1,121 @@
+domain,policy,benchmark,metric,percent,aggregation
+math,Teacher,AIME’24,Mean@16,42.50,fixed checkpoint
+math,Teacher,AIME’25,Mean@16,38.75,fixed checkpoint
+math,Teacher,HMMT’25,Mean@16,21.25,fixed checkpoint
+math,Teacher,Olympiad,Mean@16,52.15,fixed checkpoint
+math,Teacher,Avg.,Mean@16,38.66,fixed checkpoint
+math,Student,AIME’24,Mean@16,25.63,fixed checkpoint
+math,Student,AIME’25,Mean@16,19.58,fixed checkpoint
+math,Student,HMMT’25,Mean@16,12.50,fixed checkpoint
+math,Student,Olympiad,Mean@16,46.22,fixed checkpoint
+math,Student,Avg.,Mean@16,25.98,fixed checkpoint
+math,GRPO,AIME’24,Mean@16,46.63,"mean of updates 30,60,90,120,150"
+math,GRPO,AIME’25,Mean@16,36.42,"mean of updates 30,60,90,120,150"
+math,GRPO,HMMT’25,Mean@16,21.96,"mean of updates 30,60,90,120,150"
+math,GRPO,Olympiad,Mean@16,52.52,"mean of updates 30,60,90,120,150"
+math,GRPO,Avg.,Mean@16,39.38,"mean of updates 30,60,90,120,150"
+math,OPD,AIME’24,Mean@16,46.92,"mean of updates 30,60,90,120,150"
+math,OPD,AIME’25,Mean@16,38.21,"mean of updates 30,60,90,120,150"
+math,OPD,HMMT’25,Mean@16,21.42,"mean of updates 30,60,90,120,150"
+math,OPD,Olympiad,Mean@16,51.24,"mean of updates 30,60,90,120,150"
+math,OPD,Avg.,Mean@16,39.44,"mean of updates 30,60,90,120,150"
+math,KDRL,AIME’24,Mean@16,53.46,"mean of updates 30,60,90,120,150"
+math,KDRL,AIME’25,Mean@16,43.13,"mean of updates 30,60,90,120,150"
+math,KDRL,HMMT’25,Mean@16,26.08,"mean of updates 30,60,90,120,150"
+math,KDRL,Olympiad,Mean@16,53.28,"mean of updates 30,60,90,120,150"
+math,KDRL,Avg.,Mean@16,43.99,"mean of updates 30,60,90,120,150"
+math,OPRD,AIME’24,Mean@16,66.92,"mean of updates 30,60,90,120,150"
+math,OPRD,AIME’25,Mean@16,56.04,"mean of updates 30,60,90,120,150"
+math,OPRD,HMMT’25,Mean@16,31.42,"mean of updates 30,60,90,120,150"
+math,OPRD,Olympiad,Mean@16,53.26,"mean of updates 30,60,90,120,150"
+math,OPRD,Avg.,Mean@16,51.91,"mean of updates 30,60,90,120,150"
+reasoning,Teacher,Knights,Pass@1,57.50,fixed checkpoint
+reasoning,Teacher,Quantum,Pass@1,46.58,fixed checkpoint
+reasoning,Teacher,String,Pass@1,32.00,fixed checkpoint
+reasoning,Teacher,Count,Pass@1,42.50,fixed checkpoint
+reasoning,Teacher,Avg.,Pass@1,44.65,fixed checkpoint
+reasoning,Student,Knights,Pass@1,11.00,fixed checkpoint
+reasoning,Student,Quantum,Pass@1,3.14,fixed checkpoint
+reasoning,Student,String,Pass@1,3.00,fixed checkpoint
+reasoning,Student,Count,Pass@1,3.00,fixed checkpoint
+reasoning,Student,Avg.,Pass@1,5.04,fixed checkpoint
+reasoning,GRPO,Knights,Pass@1,54.20,"mean of updates 30,60,90,120,150"
+reasoning,GRPO,Quantum,Pass@1,36.24,"mean of updates 30,60,90,120,150"
+reasoning,GRPO,String,Pass@1,35.50,"mean of updates 30,60,90,120,150"
+reasoning,GRPO,Count,Pass@1,41.30,"mean of updates 30,60,90,120,150"
+reasoning,GRPO,Avg.,Pass@1,41.81,"mean of updates 30,60,90,120,150"
+reasoning,OPD,Knights,Pass@1,55.00,"mean of updates 30,60,90,120,150"
+reasoning,OPD,Quantum,Pass@1,39.62,"mean of updates 30,60,90,120,150"
+reasoning,OPD,String,Pass@1,35.10,"mean of updates 30,60,90,120,150"
+reasoning,OPD,Count,Pass@1,41.60,"mean of updates 30,60,90,120,150"
+reasoning,OPD,Avg.,Pass@1,42.83,"mean of updates 30,60,90,120,150"
+reasoning,KDRL,Knights,Pass@1,53.30,"mean of updates 30,60,90,120,150"
+reasoning,KDRL,Quantum,Pass@1,36.63,"mean of updates 30,60,90,120,150"
+reasoning,KDRL,String,Pass@1,38.10,"mean of updates 30,60,90,120,150"
+reasoning,KDRL,Count,Pass@1,49.50,"mean of updates 30,60,90,120,150"
+reasoning,KDRL,Avg.,Pass@1,44.38,"mean of updates 30,60,90,120,150"
+reasoning,OPRD,Knights,Pass@1,73.30,"mean of updates 30,60,90,120,150"
+reasoning,OPRD,Quantum,Pass@1,51.11,"mean of updates 30,60,90,120,150"
+reasoning,OPRD,String,Pass@1,42.20,"mean of updates 30,60,90,120,150"
+reasoning,OPRD,Count,Pass@1,54.10,"mean of updates 30,60,90,120,150"
+reasoning,OPRD,Avg.,Pass@1,55.18,"mean of updates 30,60,90,120,150"
+code,Teacher,LCBv5,Mean@4,28.67,fixed checkpoint
+code,Teacher,HumanEval+,Mean@4,83.74,fixed checkpoint
+code,Teacher,CodeContests,Mean@4,18.16,fixed checkpoint
+code,Teacher,APPS,Mean@4,22.01,fixed checkpoint
+code,Teacher,Avg.,Mean@4,38.15,fixed checkpoint
+code,Student,LCBv5,Mean@4,22.04,fixed checkpoint
+code,Student,HumanEval+,Mean@4,69.02,fixed checkpoint
+code,Student,CodeContests,Mean@4,8.73,fixed checkpoint
+code,Student,APPS,Mean@4,11.04,fixed checkpoint
+code,Student,Avg.,Mean@4,27.71,fixed checkpoint
+code,GRPO,LCBv5,Mean@4,29.03,"mean of updates 30,60,90,120,150"
+code,GRPO,HumanEval+,Mean@4,83.44,"mean of updates 30,60,90,120,150"
+code,GRPO,CodeContests,Mean@4,12.64,"mean of updates 30,60,90,120,150"
+code,GRPO,APPS,Mean@4,17.93,"mean of updates 30,60,90,120,150"
+code,GRPO,Avg.,Mean@4,35.76,"mean of updates 30,60,90,120,150"
+code,OPD,LCBv5,Mean@4,29.84,"mean of updates 30,60,90,120,150"
+code,OPD,HumanEval+,Mean@4,86.29,"mean of updates 30,60,90,120,150"
+code,OPD,CodeContests,Mean@4,16.79,"mean of updates 30,60,90,120,150"
+code,OPD,APPS,Mean@4,20.92,"mean of updates 30,60,90,120,150"
+code,OPD,Avg.,Mean@4,38.46,"mean of updates 30,60,90,120,150"
+code,KDRL,LCBv5,Mean@4,29.96,"mean of updates 30,60,90,120,150"
+code,KDRL,HumanEval+,Mean@4,83.53,"mean of updates 30,60,90,120,150"
+code,KDRL,CodeContests,Mean@4,13.68,"mean of updates 30,60,90,120,150"
+code,KDRL,APPS,Mean@4,18.17,"mean of updates 30,60,90,120,150"
+code,KDRL,Avg.,Mean@4,36.33,"mean of updates 30,60,90,120,150"
+code,OPRD,LCBv5,Mean@4,31.61,"mean of updates 30,60,90,120,150"
+code,OPRD,HumanEval+,Mean@4,86.63,"mean of updates 30,60,90,120,150"
+code,OPRD,CodeContests,Mean@4,18.11,"mean of updates 30,60,90,120,150"
+code,OPRD,APPS,Mean@4,24.16,"mean of updates 30,60,90,120,150"
+code,OPRD,Avg.,Mean@4,40.13,"mean of updates 30,60,90,120,150"
+agent,Teacher,Maze,Mean rule score,85.94,fixed checkpoint
+agent,Teacher,GPT4Scene,Mean rule score,64.67,fixed checkpoint
+agent,Teacher,SR-91k,Mean rule score,50.38,fixed checkpoint
+agent,Teacher,Spatial VQA,Mean rule score,69.99,fixed checkpoint
+agent,Teacher,Avg.,Mean rule score,67.74,fixed checkpoint
+agent,Student,Maze,Mean rule score,49.45,fixed checkpoint
+agent,Student,GPT4Scene,Mean rule score,63.66,fixed checkpoint
+agent,Student,SR-91k,Mean rule score,38.86,fixed checkpoint
+agent,Student,Spatial VQA,Mean rule score,67.33,fixed checkpoint
+agent,Student,Avg.,Mean rule score,54.83,fixed checkpoint
+agent,GRPO,Maze,Mean rule score,77.27,"mean of updates 45,90,135,180,225"
+agent,GRPO,GPT4Scene,Mean rule score,64.91,"mean of updates 45,90,135,180,225"
+agent,GRPO,SR-91k,Mean rule score,46.51,"mean of updates 45,90,135,180,225"
+agent,GRPO,Spatial VQA,Mean rule score,68.73,"mean of updates 45,90,135,180,225"
+agent,GRPO,Avg.,Mean rule score,64.35,"mean of updates 45,90,135,180,225"
+agent,OPD,Maze,Mean rule score,81.48,"mean of updates 45,90,135,180,225"
+agent,OPD,GPT4Scene,Mean rule score,64.74,"mean of updates 45,90,135,180,225"
+agent,OPD,SR-91k,Mean rule score,47.02,"mean of updates 45,90,135,180,225"
+agent,OPD,Spatial VQA,Mean rule score,69.04,"mean of updates 45,90,135,180,225"
+agent,OPD,Avg.,Mean rule score,65.57,"mean of updates 45,90,135,180,225"
+agent,KDRL,Maze,Mean rule score,77.86,"mean of updates 45,90,135,180,225"
+agent,KDRL,GPT4Scene,Mean rule score,65.65,"mean of updates 45,90,135,180,225"
+agent,KDRL,SR-91k,Mean rule score,46.74,"mean of updates 45,90,135,180,225"
+agent,KDRL,Spatial VQA,Mean rule score,68.43,"mean of updates 45,90,135,180,225"
+agent,KDRL,Avg.,Mean rule score,64.67,"mean of updates 45,90,135,180,225"
+agent,OPRD,Maze,Mean rule score,82.58,"mean of updates 45,90,135,180,225"
+agent,OPRD,GPT4Scene,Mean rule score,67.48,"mean of updates 45,90,135,180,225"
+agent,OPRD,SR-91k,Mean rule score,50.69,"mean of updates 45,90,135,180,225"
+agent,OPRD,Spatial VQA,Mean rule score,69.27,"mean of updates 45,90,135,180,225"
+agent,OPRD,Avg.,Mean rule score,67.50,"mean of updates 45,90,135,180,225"

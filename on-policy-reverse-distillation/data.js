@@ -1,0 +1,404 @@
+window.OPRD_DATA = {
+  "steps": [
+    0,
+    30,
+    60,
+    90,
+    120,
+    150
+  ],
+  "curves": {
+    "math": {
+      "title": "Mathematical reasoning",
+      "metric": "Mean@16",
+      "teacher": 38.662833827893174,
+      "series": {
+        "GRPO": [
+          25.981237636003957,
+          28.54707591493571,
+          33.92448689416419,
+          40.97026458951533,
+          46.26406404549951,
+          47.189972799208704
+        ],
+        "OPD": [
+          25.981237636003957,
+          45.04729228486647,
+          39.573596686449065,
+          38.27707715133531,
+          37.457344213649854,
+          36.86572700296736
+        ],
+        "OPRD": [
+          25.981237636003957,
+          47.07715133531158,
+          51.896946092977245,
+          52.950358555885266,
+          53.310305390702275,
+          54.3117890702275
+        ]
+      }
+    },
+    "reasoning": {
+      "title": "Logical reasoning",
+      "metric": "Pass@1",
+      "teacher": 44.64596273291925,
+      "series": {
+        "GRPO": [
+          5.035340314136126,
+          17.685439560439562,
+          33.035714285714285,
+          46.0,
+          51.97691082802548,
+          60.353658536585364
+        ],
+        "OPD": [
+          5.035340314136126,
+          41.8159509202454,
+          41.39398734177215,
+          43.99038461538461,
+          42.5625,
+          44.38449367088607
+        ],
+        "OPRD": [
+          5.035340314136126,
+          40.342485549132945,
+          46.60881294964029,
+          58.88291139240507,
+          62.362068965517246,
+          67.68974820143885
+        ]
+      }
+    }
+  },
+  "results": {
+    "math": {
+      "title": "Mathematical reasoning",
+      "pair": "QWEN3 · 4B → 8B",
+      "metric": "Mean@16",
+      "columns": [
+        "AIME’24",
+        "AIME’25",
+        "HMMT’25",
+        "Olympiad",
+        "Avg."
+      ],
+      "rows": [
+        {
+          "name": "Teacher",
+          "values": [
+            42.5,
+            38.75,
+            21.25,
+            52.15,
+            38.66
+          ]
+        },
+        {
+          "name": "Student",
+          "values": [
+            25.63,
+            19.58,
+            12.5,
+            46.22,
+            25.98
+          ]
+        },
+        {
+          "name": "GRPO",
+          "values": [
+            46.63,
+            36.42,
+            21.96,
+            52.52,
+            39.38
+          ]
+        },
+        {
+          "name": "OPD",
+          "values": [
+            46.92,
+            38.21,
+            21.42,
+            51.24,
+            39.44
+          ]
+        },
+        {
+          "name": "KDRL",
+          "values": [
+            53.46,
+            43.13,
+            26.08,
+            53.28,
+            43.99
+          ]
+        },
+        {
+          "name": "OPRD",
+          "values": [
+            66.92,
+            56.04,
+            31.42,
+            53.26,
+            51.91
+          ]
+        }
+      ],
+      "updates": [
+        30,
+        60,
+        90,
+        120,
+        150
+      ],
+      "note": "Mean@16 (%). Avg. equally weights the four benchmarks."
+    },
+    "reasoning": {
+      "title": "Logical reasoning",
+      "pair": "QWEN3-BASE · 4B → 8B",
+      "metric": "Pass@1",
+      "columns": [
+        "Knights",
+        "Quantum",
+        "String",
+        "Count",
+        "Avg."
+      ],
+      "rows": [
+        {
+          "name": "Teacher",
+          "values": [
+            57.5,
+            46.58,
+            32.0,
+            42.5,
+            44.65
+          ]
+        },
+        {
+          "name": "Student",
+          "values": [
+            11.0,
+            3.14,
+            3.0,
+            3.0,
+            5.04
+          ]
+        },
+        {
+          "name": "GRPO",
+          "values": [
+            54.2,
+            36.24,
+            35.5,
+            41.3,
+            41.81
+          ]
+        },
+        {
+          "name": "OPD",
+          "values": [
+            55.0,
+            39.62,
+            35.1,
+            41.6,
+            42.83
+          ]
+        },
+        {
+          "name": "KDRL",
+          "values": [
+            53.3,
+            36.63,
+            38.1,
+            49.5,
+            44.38
+          ]
+        },
+        {
+          "name": "OPRD",
+          "values": [
+            73.3,
+            51.11,
+            42.2,
+            54.1,
+            55.18
+          ]
+        }
+      ],
+      "updates": [
+        30,
+        60,
+        90,
+        120,
+        150
+      ],
+      "note": "Pass@1 (%). Avg. equally weights the four benchmarks."
+    },
+    "code": {
+      "title": "Code generation",
+      "pair": "QWEN3-BASE · 8B → 14B",
+      "metric": "Mean@4",
+      "columns": [
+        "LCBv5",
+        "HumanEval+",
+        "CodeContests",
+        "APPS",
+        "Avg."
+      ],
+      "rows": [
+        {
+          "name": "Teacher",
+          "values": [
+            28.67,
+            83.74,
+            18.16,
+            22.01,
+            38.15
+          ]
+        },
+        {
+          "name": "Student",
+          "values": [
+            22.04,
+            69.02,
+            8.73,
+            11.04,
+            27.71
+          ]
+        },
+        {
+          "name": "GRPO",
+          "values": [
+            29.03,
+            83.44,
+            12.64,
+            17.93,
+            35.76
+          ]
+        },
+        {
+          "name": "OPD",
+          "values": [
+            29.84,
+            86.29,
+            16.79,
+            20.92,
+            38.46
+          ]
+        },
+        {
+          "name": "KDRL",
+          "values": [
+            29.96,
+            83.53,
+            13.68,
+            18.17,
+            36.33
+          ]
+        },
+        {
+          "name": "OPRD",
+          "values": [
+            31.61,
+            86.63,
+            18.11,
+            24.16,
+            40.13
+          ]
+        }
+      ],
+      "updates": [
+        30,
+        60,
+        90,
+        120,
+        150
+      ],
+      "note": "Mean@4 (%). Avg. equally weights the four benchmarks."
+    },
+    "agent": {
+      "title": "Agentic visual tool use",
+      "pair": "QWEN2.5-VL · 3B → 7B",
+      "metric": "Mean rule score",
+      "columns": [
+        "Maze",
+        "GPT4Scene",
+        "SR-91k",
+        "Spatial VQA",
+        "Avg."
+      ],
+      "rows": [
+        {
+          "name": "Teacher",
+          "values": [
+            85.94,
+            64.67,
+            50.38,
+            69.99,
+            67.74
+          ]
+        },
+        {
+          "name": "Student",
+          "values": [
+            49.45,
+            63.66,
+            38.86,
+            67.33,
+            54.83
+          ]
+        },
+        {
+          "name": "GRPO",
+          "values": [
+            77.27,
+            64.91,
+            46.51,
+            68.73,
+            64.35
+          ]
+        },
+        {
+          "name": "OPD",
+          "values": [
+            81.48,
+            64.74,
+            47.02,
+            69.04,
+            65.57
+          ]
+        },
+        {
+          "name": "KDRL",
+          "values": [
+            77.86,
+            65.65,
+            46.74,
+            68.43,
+            64.67
+          ]
+        },
+        {
+          "name": "OPRD",
+          "values": [
+            82.58,
+            67.48,
+            50.69,
+            69.27,
+            67.5
+          ]
+        }
+      ],
+      "updates": [
+        45,
+        90,
+        135,
+        180,
+        225
+      ],
+      "note": "Single-trajectory mean rule score (%); numeric answers retain MRA partial credit. Avg. equally weights the four task families."
+    }
+  }
+};
