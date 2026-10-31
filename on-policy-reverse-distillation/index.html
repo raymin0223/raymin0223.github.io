@@ -39,17 +39,9 @@
   <section class="section container motivation-section" id="motivation">
     <h2 class="section-title">Research Motivation</h2>
     <p class="section-intro">Can a weaker, post-trained model accelerate a stronger student’s learning while allowing the student to surpass its teacher?</p>
-    <figure class="overview-figure"><a href="assets/figure1.png" target="_blank" rel="noopener" aria-label="Open Figure 1 at full resolution"><img src="assets/figure1.png" width="2385" height="1169" alt="Figure 1: successive model transfer and multi-domain consolidation, with OPRD learning curves compared against RL and distillation baselines." fetchpriority="high"></a><figcaption><strong>Figure 1.</strong> A post-trained 4B model guides an 8B successor (left); four specialized 4B teachers guide a single 8B student (right). Dashed lines mark teacher performance. OPRD accelerates learning and lets the student improve beyond its teachers.</figcaption></figure>
-    <div class="motivation-settings"><p><strong>Successive model transfer.</strong> Reuse the post-training gains of a smaller model to help train a more capable successor.</p><p><strong>Multi-domain consolidation.</strong> Combine guidance from smaller specialists into one stronger student, using the matching teacher for each task.</p></div>
+    <figure class="overview-figure"><a href="assets/figure1.png" target="_blank" rel="noopener" aria-label="Open Figure 1 at full resolution"><img src="assets/figure1.png" width="2385" height="1169" alt="Figure 1: successive model transfer and multi-domain consolidation, with OPRD learning curves compared against RL and distillation baselines." fetchpriority="high"></a><figcaption><strong>Figure 1.</strong> Two uses for a weaker model’s post-training gains: guide a stronger successor (left), or consolidate several specialists into one student (right). The curves show math and reasoning transfer, and consolidation of four Reasoning Gym specialists. Dashed lines mark teacher performance.</figcaption></figure>
+    <div class="motivation-settings"><p><strong>Successive model transfer.</strong> Reuse a smaller model’s post-training gains to help train a more capable successor. <a href="#successor">Single-teacher experiments ↓</a></p><p><strong>Multi-domain consolidation.</strong> Combine smaller specialists into one stronger student, using the matching teacher for each task. <a href="#multi-teacher">Multi-teacher experiment ↓</a></p></div>
     <p class="motivation-link"><a href="#method">How OPRD transfers teacher guidance ↓</a></p>
-  </section>
-
-  <section class="teaser container" aria-label="Animated learning curves">
-    <div class="media-heading"><h2>Learning beyond the weak teacher</h2><span>Qwen3 · 4B → 8B</span></div>
-    <div class="video-frame"><video id="successive-video" class="learning-video" muted loop playsinline controls preload="metadata" poster="assets/successive-learning.png" aria-label="Animated mathematics and Reasoning Gym learning curves from update zero to 150"><source src="assets/successive-learning.webm" type="video/webm"><source src="assets/successive-learning.mp4" type="video/mp4"><a href="assets/successive-learning.gif">View the learning-curve animation</a></video></div>
-    <div class="media-tools"><button class="text-button play-toggle" data-toggle="successive-video" aria-label="Play successive-model learning animation">Play</button><button class="text-button" data-replay="successive-video">Replay</button><input class="video-seek" type="range" min="0" max="1000" value="0" step="1" data-seek="successive-video" aria-label="Successive-model animation progress"><a href="assets/successive-learning.gif" download>Download GIF</a></div>
-    <p class="teaser-caption"><strong>On-Policy Reverse Distillation (OPRD)</strong> uses the post-training gains of a weaker teacher to accelerate a stronger student’s own reinforcement learning. The student learns faster and continues improving beyond its teacher.</p>
-    <details class="curve-values"><summary>View checkpoint values</summary><div class="curve-value-grid" id="curve-values"></div></details>
   </section>
 
   <section class="abstract-section section-band" id="abstract"><div class="reading-container">
@@ -70,29 +62,92 @@
 
   <section class="section section-band" id="results"><div class="container">
     <h2 class="section-title">Experimental Results</h2>
-    <p class="section-intro">We evaluate successive model transfer on mathematics, logical reasoning, code generation, and agentic visual tool use. OPRD improves the checkpoint-average score over the strongest training baseline in all four domains.</p>
-    <div class="results-tabs" role="group" aria-label="Results domain"><button data-domain="math" aria-pressed="true">Mathematics</button><button data-domain="reasoning" aria-pressed="false">Reasoning Gym</button><button data-domain="code" aria-pressed="false">Code generation</button><button data-domain="agent" aria-pressed="false">Visual tool use</button></div>
-    <div class="results-context"><span id="result-pair">QWEN3 · 4B → 8B</span><span><strong id="result-score">51.91</strong>% OPRD · <strong id="result-gain">+7.92 pp</strong> over the strongest baseline</span></div>
-    <p id="score-description" class="sr-only">OPRD checkpoint average</p>
-    <div class="comparison-layout"><div class="results-table-panel"><div class="table-scroll" tabindex="0" aria-label="Scrollable benchmark results"><h3 id="table-title" class="sr-only">Mathematical reasoning</h3><table id="results-table"></table></div><p id="table-note" class="table-note"></p></div><div class="comparison-bars"><h3>Average score (%)</h3><div id="result-bars" class="result-bars" aria-label="Average score comparison"></div></div></div>
-    <p id="results-aggregation" class="figure-caption">Teacher and initial-student rows use fixed checkpoints. Trained rows average evaluations at updates 30, 60, 90, 120, and 150. Bold marks the best trained-policy score, matching the paper.</p>
-    <div class="section-links"><a href="assets/results.csv" download>Download results (CSV)</a><a href="assets/paper.pdf" target="_blank" rel="noopener">Paper (arXiv v2 PDF)</a></div>
+    <p class="section-intro">We first test transfer from one weak teacher to a stronger successor, then consolidate several specialists into one student. A final experiment reverses the capacity ordering.</p>
+    <nav class="experiment-nav" aria-label="Experiments">
+      <a href="#successor"><span>01</span> Single teacher</a>
+      <a href="#multi-teacher"><span>02</span> Multiple teachers</a>
+      <a href="#strong-to-weak"><span>03</span> Strong-to-weak</a>
+    </nav>
+    <div class="evaluation-guide">
+      <p><strong>How to read the results.</strong> Tables report five-checkpoint averages for trained policies to reflect both learning speed and performance during training, rather than final-checkpoint scores. Curves show individual checkpoints. Teacher and initial-student scores use fixed checkpoints; metrics and update intervals are specified with each result.</p>
+      <details class="baseline-guide"><summary>Comparison methods and training setup</summary>
+        <dl>
+          <div><dt>GRPO / Mix-RL</dt><dd>Verifier-only reinforcement learning. Mix-RL trains one student on a mixture of tasks.</dd></div>
+          <div><dt>OPD / MOPD</dt><dd>Match the frozen teacher’s policy on student-generated prefixes. MOPD selects the specialist for each task.</dd></div>
+          <div><dt>KDRL</dt><dd>Combine verifier-based learning with on-policy teacher matching.</dd></div>
+          <div><dt>OPRD</dt><dd>Use the teacher’s post-training policy shift to rescale the student’s verifier-driven gradient.</dd></div>
+        </dl>
+        <p>Within each experiment, methods share the initial student checkpoint, prompts, batch size, rollout budget, and number of policy updates. Teacher-based methods use the same frozen teacher for each task. Equal update budgets do not imply equal compute costs.</p>
+      </details>
+    </div>
+
+    <section class="experiment" id="successor" aria-labelledby="successor-title">
+      <p class="experiment-label">Experiment 01 · Successive model transfer</p>
+      <h3 class="experiment-title" id="successor-title">A weak teacher accelerates a stronger successor</h3>
+      <p class="experiment-purpose">We test whether a task-trained smaller model can speed up a larger student’s learning and allow it to improve beyond the teacher.</p>
+      <p class="experiment-setup"><strong>Setup.</strong> One fixed teacher guides each student run: Qwen3 4B → 8B for math and reasoning, Qwen3-Base 8B → 14B for code, and Qwen2.5-VL 3B → 7B for visual tool use. The Reasoning Gym runs train a separate student for each task.</p>
+      <p class="result-takeaway"><strong>Finding.</strong> OPRD achieves the highest checkpoint-average score among the compared training methods in all four domains. The math and reasoning curves show early acceleration followed by continued improvement beyond the weak teacher.</p>
+
+      <div class="learning-evidence">
+        <div class="media-heading"><h4>Learning dynamics: math and reasoning</h4><span>Qwen3 · 4B → 8B</span></div>
+        <div class="video-frame"><video id="successive-video" class="learning-video" muted loop playsinline controls preload="metadata" poster="assets/successive-learning.png" aria-label="Animated mathematics and Reasoning Gym learning curves from update zero to 150"><source src="assets/successive-learning.webm" type="video/webm"><source src="assets/successive-learning.mp4" type="video/mp4"><a href="assets/successive-learning.gif">View the learning-curve animation</a></video></div>
+        <div class="media-tools"><button class="text-button play-toggle" data-toggle="successive-video" aria-label="Play successive-model learning animation">Play</button><button class="text-button" data-replay="successive-video">Replay</button><input class="video-seek" type="range" min="0" max="1000" value="0" step="1" data-seek="successive-video" aria-label="Successive-model animation progress"><a href="assets/successive-learning.gif" download>Download GIF</a></div>
+        <p class="figure-caption">OPD improves quickly but plateaus near the teacher average, while GRPO learns more gradually. OPRD combines early transfer with continued improvement. Dashed lines mark teacher scores; markers show measured checkpoints.</p>
+        <details class="curve-values"><summary>View math and reasoning checkpoint values</summary><div class="curve-value-grid" id="curve-values"></div></details>
+      </div>
+
+      <h4 class="evidence-title">Checkpoint-average performance across four domains</h4>
+      <div class="results-tabs" role="group" aria-label="Results domain"><button data-domain="math" aria-pressed="true">Mathematics</button><button data-domain="reasoning" aria-pressed="false">Reasoning Gym</button><button data-domain="code" aria-pressed="false">Code generation</button><button data-domain="agent" aria-pressed="false">Visual tool use</button></div>
+      <div class="results-context"><span id="result-pair">QWEN3 · 4B → 8B</span><span><strong id="result-score">51.91</strong>% OPRD · <strong id="result-gain">+7.92 pp</strong> over the strongest baseline</span></div>
+      <p id="score-description" class="sr-only">OPRD checkpoint average</p>
+      <div class="comparison-layout"><div class="results-table-panel"><div class="table-scroll" tabindex="0" aria-label="Scrollable benchmark results"><h4 id="table-title" class="sr-only">Mathematical reasoning</h4><table id="results-table"></table></div><p id="table-note" class="table-note"></p></div><div class="comparison-bars"><h4>Average score (%)</h4><div id="result-bars" class="result-bars" aria-label="Average score comparison"></div></div></div>
+      <p id="results-aggregation" class="figure-caption">Teacher and initial-student rows use fixed checkpoints. Trained rows average evaluations at updates 30, 60, 90, 120, and 150. Bold marks the best trained-policy score, matching the paper.</p>
+      <div class="section-links"><a href="assets/results.csv" download>Download results (CSV)</a><a href="assets/paper.pdf" target="_blank" rel="noopener">Paper (arXiv v2 PDF)</a></div>
+    </section>
+
+    <section class="experiment" id="multi-teacher" aria-labelledby="multi-teacher-title">
+      <p class="experiment-label">Experiment 02 · Multi-teacher consolidation</p>
+      <h3 class="experiment-title" id="multi-teacher-title">Four specialists improve one shared student</h3>
+      <p class="experiment-purpose">We next test whether one student can benefit from several weak teachers while learning their tasks together.</p>
+      <p class="experiment-setup"><strong>Setup.</strong> Four Qwen3-4B-Base specialists guide a single Qwen3-8B-Base student on four Reasoning Gym tasks: Knights &amp; Knaves, Quantum Lock, String Manipulation, and Countdown. Batches mix the tasks equally, with the matching teacher assigned to each example, over 300 updates.</p>
+      <p class="result-takeaway"><strong>Finding.</strong> OPRD reaches <strong>58.77%</strong> checkpoint-average Pass@1: <strong>11.09 percentage points above Mix-RL</strong> and <strong>14.12 points above the specialist average</strong>. It also exceeds the corresponding specialist on each of the four tasks.</p>
+
+      <div class="learning-evidence">
+        <div class="media-heading"><h4>Learning dynamics across the task groups</h4><span>4 × 4B → 1 × 8B</span></div>
+        <div class="video-frame"><video id="multi-video" class="learning-video" muted loop playsinline controls preload="metadata" poster="assets/multiteacher-learning.png" aria-label="Animated multi-teacher learning curves for Logic, Algorithms, and Games up to 300 updates"><source src="assets/multiteacher-learning.webm" type="video/webm"><source src="assets/multiteacher-learning.mp4" type="video/mp4"><a href="assets/multiteacher-learning.gif">View the multi-teacher animation</a></video></div>
+        <div class="media-tools"><button class="text-button play-toggle" data-toggle="multi-video" aria-label="Play multi-teacher learning animation">Play</button><button class="text-button" data-replay="multi-video">Replay</button><input class="video-seek" type="range" min="0" max="1000" value="0" step="1" data-seek="multi-video" aria-label="Multi-teacher animation progress"><a href="assets/multiteacher-learning.gif" download>Download GIF</a></div>
+        <p class="figure-caption">Logic averages Knights &amp; Knaves and Quantum Lock; Algorithms is String Manipulation; Games is Countdown. Dashed lines indicate the corresponding specialist teachers. Markers show measured checkpoints; lines connect those observations.</p>
+      </div>
+      <p class="figure-caption">Reported trained-policy scores average Pass@1 at updates 60, 120, 180, 240, and 300, with equal weight for each of the four tasks. Mix-RL, MOPD, and KDRL are the verifier-only, teacher-matching, and hybrid baselines, respectively.</p>
+    </section>
+
+    <section class="experiment" id="strong-to-weak" aria-labelledby="strong-to-weak-title">
+      <p class="experiment-label">Experiment 03 · Reversing the capacity ordering</p>
+      <h3 class="experiment-title" id="strong-to-weak-title">The same mechanism also helps a smaller student</h3>
+      <p class="experiment-purpose">We finally test whether OPRD remains useful in conventional strong-to-weak distillation.</p>
+      <p class="experiment-setup"><strong>Setup.</strong> A Qwen3-8B teacher guides a Qwen3-1.7B student on AIME’24. A Qwen3-8B-Base teacher guides a Qwen3-0.6B student on Knights &amp; Knaves.</p>
+      <p class="result-takeaway"><strong>Finding.</strong> OPRD outperforms all three training baselines on both benchmarks, suggesting that its benefit is not limited to a larger student learning from a smaller teacher.</p>
+      <div class="strong-evidence">
+        <div class="table-scroll" tabindex="0" aria-label="Scrollable strong-to-weak results"><table class="strong-results"><caption class="sr-only">Strong-to-weak scores in percent; trained-policy scores averaged over five checkpoints</caption><thead><tr><th scope="col">Policy</th><th scope="col">AIME’24<br><span>8B → 1.7B · Mean@16</span></th><th scope="col">Knights &amp; Knaves<br><span>8B-Base → 0.6B · Pass@1</span></th></tr></thead><tbody><tr><th scope="row">Teacher</th><td>52.29</td><td>64.50</td></tr><tr><th scope="row">Student</th><td>10.00</td><td>5.00</td></tr><tr><th scope="row">GRPO</th><td>18.92</td><td>20.60</td></tr><tr><th scope="row">OPD</th><td>29.79</td><td>20.20</td></tr><tr><th scope="row">KDRL</th><td>25.33</td><td>33.70</td></tr><tr class="oprd-row"><th scope="row">OPRD</th><td><strong>33.58</strong></td><td><strong>49.40</strong></td></tr></tbody></table></div>
+        <p class="figure-caption">Scores are percentages. Trained-policy rows average five checkpoints; teacher and initial-student rows use fixed checkpoints. Bold marks the best trained policy in each column. The two benchmarks use different metrics.</p>
+      </div>
+    </section>
   </div></section>
 
-  <section class="section container" id="multi-teacher">
-    <h2 class="section-title">From Four Specialists to One Student</h2>
-    <p class="section-intro">Four task-specific Qwen3-4B-Base teachers guide a single Qwen3-8B-Base student. Each training example uses the teacher for its task.</p>
-    <figure class="teacher-overview"><img src="assets/teachers.webp" width="2200" height="1072" alt="Four small specialist teachers transfer their learned capabilities into a single stronger student." loading="lazy"></figure>
-    <div class="video-frame"><video id="multi-video" class="learning-video" muted loop playsinline controls preload="metadata" poster="assets/multiteacher-learning.png" aria-label="Animated multi-teacher learning curves for Logic, Algorithms, and Games up to 300 updates"><source src="assets/multiteacher-learning.webm" type="video/webm"><source src="assets/multiteacher-learning.mp4" type="video/mp4"><a href="assets/multiteacher-learning.gif">View the multi-teacher animation</a></video></div>
-    <div class="media-tools"><button class="text-button play-toggle" data-toggle="multi-video" aria-label="Play multi-teacher learning animation">Play</button><button class="text-button" data-replay="multi-video">Replay</button><input class="video-seek" type="range" min="0" max="1000" value="0" step="1" data-seek="multi-video" aria-label="Multi-teacher animation progress"><a href="assets/multiteacher-learning.gif" download>Download GIF</a></div>
-    <p class="figure-caption">Logic averages Knights &amp; Knaves and Quantum Lock; Algorithms is String Manipulation; Games is Countdown. Dashed lines indicate the corresponding specialist teachers. Markers show measured checkpoints; lines connect those observations.</p>
-    <p class="result-takeaway">Across all four tasks, OPRD reaches <strong>58.77%</strong> average Pass@1: <strong>11.09 points above Mix-RL</strong> and <strong>14.12 points above the specialist average</strong>, averaged over updates 60, 120, 180, 240, and 300.</p>
+  <section class="section container" id="analysis">
+    <h2 class="section-title">Student Behavior under Teacher Guidance</h2>
+    <p class="section-intro">The performance results show that teacher guidance can accelerate learning. We also examine whether the student adopts the weak teacher’s response style.</p>
+    <div class="behavior-layout">
+      <div class="behavior-copy">
+        <h3>Closer to the verifier-trained student</h3>
+        <p>On AIME’24, we compare 101 response-style features grouped into five categories. At update 150, OPRD is closer to the GRPO student in all five categories, while OPD is closer to the weak teacher.</p>
+        <p><strong>Reading the figure.</strong> Positive values indicate a style closer to the GRPO student; negative values indicate a style closer to the teacher. “Student” denotes the GRPO student at update 150.</p>
+        <p>This pattern is consistent with OPRD guiding the student’s own optimization without requiring it to imitate the teacher’s response style. The figure measures style similarity, not reasoning correctness.</p>
+      </div>
+      <figure><a href="assets/style.pdf" target="_blank" rel="noopener" aria-label="Open the response-style analysis"><img src="assets/style.webp" width="2200" height="1873" alt="AIME’24 response-style comparison: OPRD is closer to the GRPO student in all five categories; OPD is closer to the weak teacher." loading="lazy"></a><figcaption>Normalized style-distance differences on AIME’24, grouped into connectives, modality, grammar, punctuation, and structure.</figcaption></figure>
+    </div>
+    <p class="analysis-scope">The paper also examines broader weak-to-strong baselines, guidance direction and strength, and failure cases when verifier gradients vanish. <a href="assets/paper.pdf" target="_blank" rel="noopener">Read the full analysis in the paper →</a></p>
   </section>
-
-  <section class="section section-band" id="analysis"><div class="container">
-    <h2 class="section-title">Further Analysis</h2>
-    <div class="analysis-grid"><article><h3>Student reasoning and response style</h3><p>On AIME’24, OPRD students remain stylistically closer to verifier-only RL students than to their weak teachers, suggesting that teacher guidance accelerates the student’s own optimization.</p><figure><a href="assets/style.pdf" target="_blank" rel="noopener" aria-label="Open the response-style analysis"><img src="assets/style.webp" width="2200" height="1873" alt="Response-style category fingerprints on AIME24, comparing teacher, RL, OPD, and OPRD." loading="lazy"></a><figcaption>Response-style analysis from the manuscript.</figcaption></figure></article><article><h3>Strong-to-weak distillation</h3><p>The same mechanism also benefits a smaller student learning from a stronger teacher. OPRD outperforms OPD on both reported benchmarks.</p><div class="table-scroll"><table class="strong-results"><caption class="sr-only">Strong-to-weak scores in percent, averaged over five checkpoints</caption><thead><tr><th scope="col">Policy</th><th scope="col">AIME’24<br><span>8B → 1.7B</span></th><th scope="col">Knights &amp; Knaves<br><span>8B-Base → 0.6B</span></th></tr></thead><tbody><tr><th scope="row">GRPO</th><td>18.92</td><td>20.60</td></tr><tr><th scope="row">OPD</th><td>29.79</td><td>20.20</td></tr><tr><th scope="row">KDRL</th><td>25.33</td><td>33.70</td></tr><tr class="oprd-row"><th scope="row">OPRD</th><td><strong>33.58</strong></td><td><strong>49.40</strong></td></tr></tbody></table></div><p class="figure-caption">Mean@16 for AIME’24 and Pass@1 for Knights &amp; Knaves. Trained-policy scores average five checkpoints.</p><p class="analysis-note">OPRD can use teacher guidance without requiring the student to reproduce the teacher’s full policy.</p></article></div>
-  </div></section>
 
   <section class="section reading-container" id="bibtex">
     <h2 class="section-title">BibTeX</h2>
